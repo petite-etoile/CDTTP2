@@ -1,0 +1,5785 @@
+Last login: Thu Oct 28 18:44:51 on ttys001
+
+McDonaldsPro ~/Documents/programming/kyopro/ICPC
+
+(๑˃̵ᴗ˂̵)ﻭ <  cd_lab 
+
+McDonaldsPro ~/Documents/University/lab
+
+(๑˃̵ᴗ˂̵)ﻭ <  ls
+M1            Notion-Backup Pagerank      Scheduling    seminar       test.cpp
+
+McDonaldsPro ~/Documents/University/lab
+
+(๑˃̵ᴗ˂̵)ﻭ <  cd Scheduling 
+
+McDonaldsPro ~/Documents/University/lab/Scheduling
+
+(๑˃̵ᴗ˂̵)ﻭ <  ls
+documents pdf       program   solver
+
+McDonaldsPro ~/Documents/University/lab/Scheduling
+
+(๑˃̵ᴗ˂̵)ﻭ <  cd solver 
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  ls
+XvsY_v1.lp       cplex.log        print_lp_file.py test.lp          tk_test.py
+XvsY_v1.py       piplist.txt      runner_sample.py test.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  cd ..
+
+McDonaldsPro ~/Documents/University/lab/Scheduling
+
+(๑˃̵ᴗ˂̵)ﻭ <  ls
+documents pdf       program   solver
+
+McDonaldsPro ~/Documents/University/lab/Scheduling
+
+(๑˃̵ᴗ˂̵)ﻭ <  mkdir CDTTP_solver
+
+McDonaldsPro ~/Documents/University/lab/Scheduling
+
+(๑˃̵ᴗ˂̵)ﻭ <  cd CDTTP_solver 
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/petite/Documents/University/lab/Scheduling/CDTTP_solver/.git/
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  git branch
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  echo "# CDTTP2" >> README.md
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:petite-etoile/CDTTP2.git
+git push -u origin main
+[master (root-commit) 2ed625b] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+The authenticity of host 'github.com (52.69.186.44)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yrs
+Please type 'yes', 'no' or the fingerprint: yrs
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com,52.69.186.44' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  git status
+On branch main
+nothing to commit, working tree clean
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  git log
+commit 2ed625b8e588ae4637b64173553a2129c065e8a1 (HEAD -> main)
+Author: 小野隆規 <tkkydrm3tn@yahoo.co.jp>
+Date:   Fri Oct 29 11:55:39 2021 +0900
+
+    first commit
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  git remote add origin git@github.com:petite-etoile/CDTTP2.git
+
+error: remote origin already exists.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  git push -u origin main
+
+Warning: Permanently added the RSA host key for IP address '52.192.72.89' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  git push -u origin main
+
+Warning: Permanently added the RSA host key for IP address '13.114.40.48' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  git push -u origin main
+
+Warning: Permanently added the RSA host key for IP address '52.192.72.89' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  ssh-add -;
+^C
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  ssh-add -l
+The agent has no identities.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  git push -u origin main
+
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  ssh-add -l             
+The agent has no identities.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  ssh-add github                 
+github: No such file or directory
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  ssh-add -l    
+3072 SHA256:OprRjDdQMEDb1uKWl35Xetu5NbCwtDUF2VoquTirae8 petite@McDonaldsPro.local (RSA)
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  git push -u origin main
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:petite-etoile/CDTTP2.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  cp ../solver/XvsY_v1.py 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  cp ../solver/XvsY_v1.py .
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  ls
+README.md  XvsY_v1.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  mv XvsY_v1.py CDTTP2.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  code !$
+code CDTTP2.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py 
+4
+^C^[[A^C
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "CDTTP2.py", line 285, in <module>
+    main()
+  File "CDTTP2.py", line 276, in main
+    SM.solve()
+  File "CDTTP2.py", line 91, in solve
+    self.represent_schdule()
+  File "CDTTP2.py", line 253, in represent_schdule
+    value = self.M.vars[i,slot,j,ha].solution_value
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 252, in solution_value
+    self._check_model_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 111, in _check_model_has_solution
+    self.model.check_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 4775, in check_has_solution
+    self.fatal("Model<{0}> did not solve successfully", self.name)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 894, in fatal
+    self._error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Model<docplex_model1> did not solve successfully
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+^C^Z
+zsh: suspended  python CDTTP2.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+x(01,01,01,00) : 1.0
+x(01,02,02,01) : 1.0
+x(01,03,03,01) : 1.0
+x(01,04,04,00) : 1.0
+x(01,05,01,01) : 1.0
+x(01,06,02,00) : 1.0
+x(01,07,03,00) : 1.0
+x(01,08,04,01) : 1.0
+x(02,01,02,00) : 1.0
+x(02,02,01,01) : 1.0
+x(02,03,04,01) : 1.0
+x(02,04,03,00) : 1.0
+x(02,05,02,01) : 1.0
+x(02,06,03,01) : 1.0
+x(02,07,04,00) : 1.0
+x(02,08,01,00) : 1.0
+x(03,01,04,01) : 1.0
+x(03,02,03,00) : 1.0
+x(03,03,02,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,04,00) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,03,01) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,04,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,04,01) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,02,00) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  timepython CDTTP2.py
+zsh: command not found: timepython
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  time python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+x(01,01,01,00) : 1.0
+x(01,02,02,01) : 1.0
+x(01,03,03,00) : 1.0
+x(01,04,04,01) : 1.0
+x(01,05,01,01) : 1.0
+x(01,06,02,00) : 1.0
+x(01,07,03,01) : 1.0
+x(01,08,04,00) : 1.0
+x(02,01,02,00) : 1.0
+x(02,02,01,01) : 1.0
+x(02,03,02,01) : 1.0
+x(02,04,01,00) : 1.0
+x(02,05,04,00) : 1.0
+x(02,06,03,01) : 1.0
+x(02,07,04,01) : 1.0
+x(02,08,03,00) : 1.0
+x(03,01,04,01) : 1.0
+x(03,02,03,00) : 1.0
+x(03,03,04,00) : 1.0
+x(03,04,03,01) : 1.0
+x(03,05,02,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,00) : 1.0
+x(03,08,01,01) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,04,00) : 1.0
+x(04,03,01,01) : 1.0
+x(04,04,02,00) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,04,01) : 1.0
+x(04,07,01,00) : 1.0
+x(04,08,02,01) : 1.0
+python CDTTP2.py  1.37s user 0.61s system 40% cpu 4.892 total
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  time python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+x(01,01,01,00) : 1.0
+x(01,02,02,01) : 1.0
+x(01,03,03,00) : 1.0
+x(01,04,04,01) : 1.0
+x(01,05,01,01) : 1.0
+x(01,06,02,00) : 1.0
+x(01,07,03,01) : 1.0
+x(01,08,04,00) : 1.0
+x(02,01,02,00) : 1.0
+x(02,02,01,01) : 1.0
+x(02,03,02,01) : 1.0
+x(02,04,01,00) : 1.0
+x(02,05,04,00) : 1.0
+x(02,06,03,01) : 1.0
+x(02,07,04,01) : 1.0
+x(02,08,03,00) : 1.0
+x(03,01,04,01) : 1.0
+x(03,02,03,00) : 1.0
+x(03,03,04,00) : 1.0
+x(03,04,03,01) : 1.0
+x(03,05,02,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,00) : 1.0
+x(03,08,01,01) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,04,00) : 1.0
+x(04,03,01,01) : 1.0
+x(04,04,02,00) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,04,01) : 1.0
+x(04,07,01,00) : 1.0
+x(04,08,02,01) : 1.0
+python CDTTP2.py  0.86s user 0.25s system 98% cpu 1.130 total
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  time python CDTTP2.py
+^C^[[A
+KeyboardInterrupt
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+1 12
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+2 11
+2 12
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+3 11
+3 12
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+4 11
+4 12
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+5 11
+5 12
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+6 11
+6 12
+x(01,01,01,00) : 1.0
+x(01,02,02,01) : 1.0
+x(01,03,03,00) : 1.0
+x(01,04,04,01) : 1.0
+x(01,05,05,01) : 1.0
+x(01,06,06,00) : 1.0
+x(01,07,01,01) : 1
+x(01,08,04,00) : 1.0
+x(01,09,03,01) : 1
+x(01,10,02,00) : 1
+x(01,11,05,00) : 1.0
+x(01,12,06,01) : 1.0
+x(02,01,05,00) : 1.0
+x(02,02,06,01) : 1.0
+x(02,03,02,00) : 1.0
+x(02,04,06,00) : 1.0
+x(02,05,03,01) : 1.0
+x(02,06,05,01) : 1
+x(02,07,03,00) : 1.0
+x(02,08,02,01) : 1.0
+x(02,09,01,00) : 1.0
+x(02,10,04,00) : 1.0
+x(02,11,01,01) : 1
+x(02,12,04,01) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,03,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,05,00) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,00) : 1.0
+x(03,08,01,01) : 1.0
+x(03,09,04,01) : 1.0
+x(03,10,03,00) : 1.0
+x(03,11,02,01) : 1.0
+x(03,12,05,01) : 1
+x(04,01,02,01) : 1.0
+x(04,02,04,00) : 1.0
+x(04,03,05,01) : 1.0
+x(04,04,03,00) : 1.0
+x(04,05,02,00) : 1.0
+x(04,06,04,01) : 1.0
+x(04,07,06,01) : 1
+x(04,08,05,00) : 1.0
+x(04,09,06,00) : 1
+x(04,10,01,01) : 1.0
+x(04,11,03,01) : 1.0
+x(04,12,01,00) : 1.0
+x(05,01,03,01) : 1.0
+x(05,02,05,00) : 1.0
+x(05,03,01,01) : 1.0
+x(05,04,02,01) : 1.0
+x(05,05,01,00) : 1.0
+x(05,06,03,00) : 1.0
+x(05,07,04,01) : 1.0
+x(05,08,06,00) : 1.0
+x(05,09,05,01) : 1
+x(05,10,06,01) : 1.0
+x(05,11,04,00) : 1.0
+x(05,12,02,00) : 1.0
+x(06,01,06,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,04,01) : 1.0
+x(06,04,01,01) : 1.0
+x(06,05,04,00) : 1.0
+x(06,06,02,01) : 1.0
+x(06,07,05,00) : 1.0
+x(06,08,03,01) : 1.0
+x(06,09,02,00) : 1.0
+x(06,10,05,01) : 1.0
+x(06,11,06,00) : 1.0
+x(06,12,03,00) : 1.0
+python CDTTP2.py  24.96s user 0.38s system 99% cpu 25.510 total
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  time python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+1 12
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+2 11
+2 12
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+3 11
+3 12
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+4 11
+4 12
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+5 11
+5 12
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+6 11
+6 12
+x(01,01,01,00) : 1.0
+x(01,02,02,01) : 1.0
+x(01,03,04,00) : 1.0
+x(01,04,06,01) : 1.0
+x(01,05,03,00) : 1.0
+x(01,06,05,00) : 1.0
+x(01,07,04,01) : 1.0
+x(01,08,02,00) : 1.0
+x(01,09,05,01) : 1.0
+x(01,10,01,01) : 1.0
+x(01,11,06,00) : 1.0
+x(01,12,03,01) : 1.0
+x(02,01,05,01) : 1.0
+x(02,02,04,00) : 1.0
+x(02,03,01,00) : 1.0
+x(02,04,03,01) : 1.0
+x(02,05,06,00) : 1.0
+x(02,06,02,01) : 1.0
+x(02,07,05,00) : 1.0
+x(02,08,01,01) : 1.0
+x(02,09,02,00) : 1.0
+x(02,10,03,00) : 1.0
+x(02,11,04,01) : 1.0
+x(02,12,06,01) : 1.0
+x(03,01,03,01) : 1.0
+x(03,02,05,00) : 1.0
+x(03,03,03,00) : 1.0
+x(03,04,04,01) : 1.0
+x(03,05,02,00) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,06,01) : 1.0
+x(03,09,04,00) : 1.0
+x(03,10,06,00) : 1.0
+x(03,11,01,01) : 1.0
+x(03,12,05,01) : 1.0
+x(04,01,02,00) : 1.0
+x(04,02,01,01) : 1.0
+x(04,03,06,01) : 1.0
+x(04,04,05,00) : 1.0
+x(04,05,04,01) : 1.0
+x(04,06,03,01) : 1.0
+x(04,07,06,00) : 1.0
+x(04,08,05,01) : 1.0
+x(04,09,01,00) : 1.0
+x(04,10,02,01) : 1.0
+x(04,11,03,00) : 1.0
+x(04,12,04,00) : 1.0
+x(05,01,04,01) : 1.0
+x(05,02,06,00) : 1.0
+x(05,03,05,01) : 1.0
+x(05,04,02,00) : 1.0
+x(05,05,01,01) : 1.0
+x(05,06,06,01) : 1.0
+x(05,07,03,00) : 1.0
+x(05,08,04,00) : 1.0
+x(05,09,03,01) : 1.0
+x(05,10,05,00) : 1.0
+x(05,11,02,01) : 1.0
+x(05,12,01,00) : 1.0
+x(06,01,06,00) : 1.0
+x(06,02,03,01) : 1.0
+x(06,03,02,01) : 1.0
+x(06,04,01,00) : 1.0
+x(06,05,05,01) : 1.0
+x(06,06,04,00) : 1.0
+x(06,07,01,01) : 1.0
+x(06,08,03,00) : 1.0
+x(06,09,06,01) : 1.0
+x(06,10,04,01) : 1.0
+x(06,11,05,00) : 1.0
+x(06,12,02,00) : 1.0
+python CDTTP2.py  13.26s user 0.29s system 99% cpu 13.597 total
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  time python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+1 12
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+2 11
+2 12
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+3 11
+3 12
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+4 11
+4 12
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+5 11
+5 12
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+6 11
+6 12
+x(01,01,01,00) : 1.0
+x(01,02,02,01) : 1.0
+x(01,03,06,01) : 1
+x(01,04,03,00) : 1.0
+x(01,05,04,00) : 1.0
+x(01,06,05,01) : 1.0
+x(01,07,02,00) : 1
+x(01,08,01,01) : 1.0
+x(01,09,06,00) : 1
+x(01,10,04,01) : 1.0
+x(01,11,03,01) : 1.0
+x(01,12,05,00) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,01,00) : 1.0
+x(02,05,02,01) : 1.0
+x(02,06,03,00) : 1.0
+x(02,07,06,01) : 1.0
+x(02,08,05,00) : 1.0
+x(02,09,04,00) : 1.0
+x(02,10,03,01) : 1.0
+x(02,11,02,00) : 1
+x(02,12,01,01) : 1
+x(03,01,02,01) : 1
+x(03,02,05,00) : 1.0
+x(03,03,03,00) : 1
+x(03,04,04,01) : 1
+x(03,05,06,00) : 1.0
+x(03,06,01,01) : 1.0
+x(03,07,03,01) : 1.0
+x(03,08,04,00) : 1.0
+x(03,09,05,01) : 1.0
+x(03,10,02,00) : 1
+x(03,11,01,00) : 1.0
+x(03,12,06,01) : 1
+x(04,01,05,01) : 1.0
+x(04,02,01,00) : 1.0
+x(04,03,04,00) : 1
+x(04,04,06,01) : 1
+x(04,05,03,01) : 1.0
+x(04,06,02,00) : 1.0
+x(04,07,04,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,01,01) : 1.0
+x(04,10,05,00) : 1.0
+x(04,11,06,00) : 1
+x(04,12,02,01) : 1.0
+x(05,01,03,01) : 1.0
+x(05,02,06,00) : 1.0
+x(05,03,01,01) : 1
+x(05,04,02,00) : 1
+x(05,05,05,00) : 1.0
+x(05,06,04,01) : 1.0
+x(05,07,01,00) : 1.0
+x(05,08,02,01) : 1.0
+x(05,09,03,00) : 1
+x(05,10,06,01) : 1.0
+x(05,11,05,01) : 1.0
+x(05,12,04,00) : 1
+x(06,01,04,00) : 1.0
+x(06,02,03,01) : 1.0
+x(06,03,02,00) : 1.0
+x(06,04,05,01) : 1.0
+x(06,05,01,01) : 1.0
+x(06,06,06,00) : 1.0
+x(06,07,05,00) : 1.0
+x(06,08,06,01) : 1.0
+x(06,09,02,01) : 1.0
+x(06,10,01,00) : 1.0
+x(06,11,04,01) : 1.0
+x(06,12,03,00) : 1.0
+python CDTTP2.py  20.51s user 0.33s system 320% cpu 6.507 total
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py 
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+1 12
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+2 11
+2 12
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+3 11
+3 12
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+4 11
+4 12
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+5 11
+5 12
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+6 11
+6 12
+x(01,01,01,00) : 1.0
+x(01,02,02,01) : 1.0
+x(01,03,03,00) : 1.0
+x(01,04,06,00) : 1.0
+x(01,05,01,01) : 1.0
+x(01,06,05,01) : 1.0
+x(01,07,02,00) : 1.0
+x(01,08,03,01) : 1.0
+x(01,09,04,00) : 1.0
+x(01,10,06,01) : 1
+x(01,11,04,01) : 1.0
+x(01,12,05,00) : 1
+x(02,01,03,00) : 1
+x(02,02,01,01) : 1
+x(02,03,05,01) : 1.0
+x(02,04,02,00) : 1.0
+x(02,05,04,00) : 1.0
+x(02,06,03,01) : 1
+x(02,07,06,01) : 1
+x(02,08,05,00) : 1.0
+x(02,09,01,00) : 1
+x(02,10,04,01) : 1
+x(02,11,06,00) : 1.0
+x(02,12,02,01) : 1
+x(03,01,04,01) : 1
+x(03,02,05,00) : 1.0
+x(03,03,06,01) : 1
+x(03,04,01,00) : 1.0
+x(03,05,02,01) : 1.0
+x(03,06,06,00) : 1
+x(03,07,03,00) : 1
+x(03,08,01,01) : 1.0
+x(03,09,05,01) : 1.0
+x(03,10,02,00) : 1.0
+x(03,11,03,01) : 1
+x(03,12,04,00) : 1.0
+x(04,01,02,01) : 1
+x(04,02,06,00) : 1
+x(04,03,01,01) : 1.0
+x(04,04,04,01) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,02,00) : 1.0
+x(04,07,05,01) : 1.0
+x(04,08,04,00) : 1.0
+x(04,09,03,01) : 1
+x(04,10,05,00) : 1.0
+x(04,11,01,00) : 1.0
+x(04,12,06,01) : 1
+x(05,01,06,01) : 1.0
+x(05,02,04,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,03,01) : 1.0
+x(05,05,05,00) : 1.0
+x(05,06,04,01) : 1.0
+x(05,07,01,00) : 1
+x(05,08,02,01) : 1.0
+x(05,09,06,00) : 1.0
+x(05,10,03,00) : 1.0
+x(05,11,05,01) : 1.0
+x(05,12,01,01) : 1.0
+x(06,01,05,00) : 1
+x(06,02,03,01) : 1.0
+x(06,03,04,00) : 1.0
+x(06,04,05,01) : 1.0
+x(06,05,06,01) : 1.0
+x(06,06,01,00) : 1
+x(06,07,04,01) : 1.0
+x(06,08,06,00) : 1.0
+x(06,09,02,01) : 1.0
+x(06,10,01,01) : 1.0
+x(06,11,02,00) : 1
+x(06,12,03,00) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py     
+Traceback (most recent call last):
+  File "CDTTP2.py", line 240, in <module>
+    main()
+  File "CDTTP2.py", line 230, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 58, in build
+    self.add_constraints5()
+AttributeError: 'SchedulingModel' object has no attribute 'add_constraints5'
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 240, in <module>
+    main()
+  File "CDTTP2.py", line 230, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 58, in build
+    self.add_constraints5()
+  File "CDTTP2.py", line 169, in add_constraints5
+    self.M.ivsj_diff = self.get_expr_ivsj_diff(i, j, ha)
+NameError: name 'ha' is not defined
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 240, in <module>
+    main()
+  File "CDTTP2.py", line 230, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 59, in build
+    self.add_constraints6()
+  File "CDTTP2.py", line 188, in add_constraints6
+    self.M.add_constraint( self.M.vars[-i,-r,-ha] >= self.M.play_on_r + self.M.play_on_r_plus_1 - 1 )
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 1492, in add
+    self.add(e.to_linear_expr())
+AttributeError: 'NoneType' object has no attribute 'to_linear_expr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "CDTTP2.py", line 245, in <module>
+    main()
+  File "CDTTP2.py", line 235, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 59, in build
+    self.add_constraints6()
+  File "CDTTP2.py", line 190, in add_constraints6
+    expr.add(self.M.play_on_r)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 1494, in add
+    self._unsupported_binary_operation(self, "+", e)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 137, in _unsupported_binary_operation
+    self.fatal("Unsupported operation: {0!s} {1:s} {2!s}", lhs, op, rhs)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 114, in fatal
+    self.error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Unsupported operation: 0 + None
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 1492, in add
+    self.add(e.to_linear_expr())
+AttributeError: 'NoneType' object has no attribute 'to_linear_expr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "CDTTP2.py", line 245, in <module>
+    main()
+  File "CDTTP2.py", line 235, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 59, in build
+    self.add_constraints6()
+  File "CDTTP2.py", line 190, in add_constraints6
+    expr.add(self.M.play_on_r)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 1494, in add
+    self._unsupported_binary_operation(self, "+", e)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 137, in _unsupported_binary_operation
+    self.fatal("Unsupported operation: {0!s} {1:s} {2!s}", lhs, op, rhs)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 114, in fatal
+    self.error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Unsupported operation: 0 + None
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 1492, in add
+    self.add(e.to_linear_expr())
+AttributeError: 'NoneType' object has no attribute 'to_linear_expr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "CDTTP2.py", line 252, in <module>
+    main()
+  File "CDTTP2.py", line 242, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 59, in build
+    self.add_constraints6()
+  File "CDTTP2.py", line 197, in add_constraints6
+    expr.add(self.M.play_on_r)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 1494, in add
+    self._unsupported_binary_operation(self, "+", e)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 137, in _unsupported_binary_operation
+    self.fatal("Unsupported operation: {0!s} {1:s} {2!s}", lhs, op, rhs)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 114, in fatal
+    self.error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Unsupported operation: 0 + None
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 249, in <module>
+    main()
+  File "CDTTP2.py", line 239, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 59, in build
+    self.add_constraints6()
+  File "CDTTP2.py", line 197, in add_constraints6
+    self.M.add_constraint( self.M.vars[-i,-r,-ha] >= expr )
+NameError: name 'expr' is not defined
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 249, in <module>
+    main()
+  File "CDTTP2.py", line 239, in main
+    SM = SchedulingModel(n)
+  File "CDTTP2.py", line 38, in __init__
+    self.build(n)
+  File "CDTTP2.py", line 59, in build
+    self.add_constraints6()
+  File "CDTTP2.py", line 191, in add_constraints6
+    self.M.play_on_r_plus_1 = self.get_expr_i_play_on_r_at_ha(i, r+1, ha)
+  File "CDTTP2.py", line 176, in get_expr_i_play_on_r_at_ha
+    expr.add( self.M.vars[i, r, j, ha])
+KeyError: (1, 13, 1, 0)
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 249, in <module>
+    main()
+  File "CDTTP2.py", line 240, in main
+    SM.solve()
+  File "CDTTP2.py", line 78, in solve
+    self.represent_schdule()
+  File "CDTTP2.py", line 217, in represent_schdule
+    value = self.M.vars[i,r,j,ha].solution_value
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 252, in solution_value
+    self._check_model_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 111, in _check_model_has_solution
+    self.model.check_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 4775, in check_has_solution
+    self.fatal("Model<{0}> did not solve successfully", self.name)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 894, in fatal
+    self._error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Model<docplex_model1> did not solve successfully
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  code /Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.p
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  code /Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  code /Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py                                                                
+Traceback (most recent call last):
+  File "CDTTP2.py", line 249, in <module>
+    main()
+  File "CDTTP2.py", line 240, in main
+    SM.solve()
+  File "CDTTP2.py", line 78, in solve
+    self.represent_schdule()
+  File "CDTTP2.py", line 217, in represent_schdule
+    value = self.M.vars[i,r,j,ha].solution_value
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 252, in solution_value
+    self._check_model_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 111, in _check_model_has_solution
+    self.model.check_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 4775, in check_has_solution
+    self.fatal("Model<{0}> did not solve successfully", self.name)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 894, in fatal
+    self._error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Model<docplex_model1> did not solve successfully
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+Traceback (most recent call last):
+  File "CDTTP2.py", line 249, in <module>
+    main()
+  File "CDTTP2.py", line 240, in main
+    SM.solve()
+  File "CDTTP2.py", line 78, in solve
+    self.represent_schdule()
+  File "CDTTP2.py", line 220, in represent_schdule
+    self.schedule[i-1][r-1] = "{}{}".format("@" if ha else " ", j)
+IndexError: list assignment index out of range
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,04,00) : 1.0
+x(01,02,05,00) : 1.0
+x(01,03,06,01) : 1.0
+x(01,04,05,01) : 1.0
+x(01,05,03,01) : 1.0
+x(01,06,06,00) : 1.0
+x(01,07,02,00) : 1.0
+x(01,08,06,00) : 1.0
+x(01,09,05,00) : 1.0
+x(01,10,06,00) : 1.0
+x(02,01,01,00) : 1.0
+x(02,02,02,00) : 1.0
+x(02,03,01,01) : 1.0
+x(02,04,02,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,02,00) : 1.0
+x(02,07,01,00) : 1.0
+x(02,08,02,00) : 1.0
+x(02,09,01,00) : 1.0
+x(02,10,02,01) : 1.0
+x(03,01,01,00) : 1.0
+x(03,02,02,00) : 1.0
+x(03,03,01,00) : 1.0
+x(03,04,02,00) : 1.0
+x(03,05,01,00) : 1.0
+x(03,06,02,00) : 1.0
+x(03,07,01,00) : 1.0
+x(03,08,02,00) : 1.0
+x(03,09,01,00) : 1.0
+x(03,10,02,01) : 1.0
+x(04,01,01,00) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,00) : 1.0
+x(04,05,01,00) : 1.0
+x(04,06,02,00) : 1.0
+x(04,07,01,00) : 1.0
+x(04,08,02,00) : 1.0
+x(04,09,01,01) : 1.0
+x(04,10,02,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,02,00) : 1.0
+x(05,03,01,00) : 1.0
+x(05,04,02,00) : 1.0
+x(05,05,01,00) : 1.0
+x(05,06,02,00) : 1.0
+x(05,07,01,00) : 1.0
+x(05,08,02,00) : 1.0
+x(05,09,01,01) : 1.0
+x(05,10,02,01) : 1.0
+x(06,01,01,00) : 1.0
+x(06,02,02,00) : 1.0
+x(06,03,01,00) : 1.0
+x(06,04,02,00) : 1.0
+x(06,05,01,00) : 1.0
+x(06,06,02,00) : 1.0
+x(06,07,01,00) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,02,01) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py                                                                
+Traceback (most recent call last):
+  File "CDTTP2.py", line 249, in <module>
+    main()
+  File "CDTTP2.py", line 240, in main
+    SM.solve()
+  File "CDTTP2.py", line 78, in solve
+    self.represent_schdule()
+  File "CDTTP2.py", line 217, in represent_schdule
+    value = self.M.vars[i,r,j,ha].solution_value
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 252, in solution_value
+    self._check_model_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 111, in _check_model_has_solution
+    self.model.check_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 4775, in check_has_solution
+    self.fatal("Model<{0}> did not solve successfully", self.name)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 894, in fatal
+    self._error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Model<docplex_model1> did not solve successfully
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,04,00) : 1.0
+x(01,02,05,00) : 1.0
+x(01,03,06,01) : 1.0
+x(01,04,05,01) : 1.0
+x(01,05,03,01) : 1.0
+x(01,06,06,00) : 1.0
+x(01,07,02,00) : 1.0
+x(01,08,06,00) : 1.0
+x(01,09,05,00) : 1.0
+x(01,10,06,00) : 1.0
+x(02,01,01,00) : 1.0
+x(02,02,02,00) : 1.0
+x(02,03,01,01) : 1.0
+x(02,04,02,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,02,00) : 1.0
+x(02,07,01,00) : 1.0
+x(02,08,02,00) : 1.0
+x(02,09,01,00) : 1.0
+x(02,10,02,01) : 1.0
+x(03,01,01,00) : 1.0
+x(03,02,02,00) : 1.0
+x(03,03,01,00) : 1.0
+x(03,04,02,00) : 1.0
+x(03,05,01,00) : 1.0
+x(03,06,02,00) : 1.0
+x(03,07,01,00) : 1.0
+x(03,08,02,00) : 1.0
+x(03,09,01,00) : 1.0
+x(03,10,02,01) : 1.0
+x(04,01,01,00) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,00) : 1.0
+x(04,05,01,00) : 1.0
+x(04,06,02,00) : 1.0
+x(04,07,01,00) : 1.0
+x(04,08,02,00) : 1.0
+x(04,09,01,01) : 1.0
+x(04,10,02,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,02,00) : 1.0
+x(05,03,01,00) : 1.0
+x(05,04,02,00) : 1.0
+x(05,05,01,00) : 1.0
+x(05,06,02,00) : 1.0
+x(05,07,01,00) : 1.0
+x(05,08,02,00) : 1.0
+x(05,09,01,01) : 1.0
+x(05,10,02,01) : 1.0
+x(06,01,01,00) : 1.0
+x(06,02,02,00) : 1.0
+x(06,03,01,00) : 1.0
+x(06,04,02,00) : 1.0
+x(06,05,01,00) : 1.0
+x(06,06,02,00) : 1.0
+x(06,07,01,00) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,02,01) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,03,00) : 1.0
+x(01,02,02,00) : 1.0
+x(01,03,03,01) : 1.0
+x(01,04,04,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,06,00) : 1.0
+x(01,07,05,00) : 1.0
+x(01,08,02,00) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,04,00) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,01,01) : 1.0
+x(02,03,04,01) : 1.0
+x(02,04,05,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,03,00) : 1.0
+x(02,07,06,01) : 1.0
+x(02,08,01,01) : 1.0
+x(02,09,03,00) : 1.0
+x(02,10,05,00) : 1.0
+x(03,01,01,01) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,01,00) : 1.0
+x(03,04,06,00) : 1.0
+x(03,05,04,01) : 1.0
+x(03,06,02,01) : 1.0
+x(03,07,04,01) : 1.0
+x(03,08,05,01) : 1.0
+x(03,09,02,01) : 1.0
+x(03,10,06,00) : 1.0
+x(04,01,05,00) : 1.0
+x(04,02,06,00) : 1.0
+x(04,03,02,00) : 1.0
+x(04,04,01,01) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,05,00) : 1.0
+x(04,07,03,00) : 1.0
+x(04,08,06,01) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,01,01) : 1.0
+x(05,01,04,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,06,00) : 1.0
+x(05,04,02,01) : 1.0
+x(05,05,06,00) : 1.0
+x(05,06,04,01) : 1.0
+x(05,07,01,01) : 1.0
+x(05,08,03,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,02,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,04,01) : 1.0
+x(06,03,05,01) : 1.0
+x(06,04,03,01) : 1.0
+x(06,05,05,01) : 1.0
+x(06,06,01,01) : 1.0
+x(06,07,02,00) : 1.0
+x(06,08,04,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,03,01) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,01,00) : 1.0
+x(01,02,02,00) : 1.0
+x(01,03,01,01) : 1.0
+x(01,04,02,00) : 1.0
+x(01,05,01,00) : 1.0
+x(01,06,02,01) : 1.0
+x(01,07,01,00) : 1.0
+x(01,08,02,00) : 1.0
+x(01,09,01,01) : 1.0
+x(01,10,02,00) : 1.0
+x(02,01,01,00) : 1.0
+x(02,02,02,00) : 1.0
+x(02,03,01,01) : 1.0
+x(02,04,02,00) : 1.0
+x(02,05,01,00) : 1.0
+x(02,06,02,01) : 1.0
+x(02,07,01,00) : 1.0
+x(02,08,02,00) : 1.0
+x(02,09,01,01) : 1.0
+x(02,10,02,00) : 1.0
+x(03,01,01,00) : 1.0
+x(03,02,02,00) : 1.0
+x(03,03,01,01) : 1.0
+x(03,04,02,00) : 1.0
+x(03,05,01,00) : 1.0
+x(03,06,02,01) : 1.0
+x(03,07,01,00) : 1.0
+x(03,08,02,00) : 1.0
+x(03,09,01,01) : 1.0
+x(03,10,02,00) : 1.0
+x(04,01,01,00) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,01) : 1.0
+x(04,04,02,00) : 1.0
+x(04,05,01,00) : 1.0
+x(04,06,02,01) : 1.0
+x(04,07,01,00) : 1.0
+x(04,08,02,00) : 1.0
+x(04,09,01,01) : 1.0
+x(04,10,02,00) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,02,00) : 1.0
+x(05,03,01,01) : 1.0
+x(05,04,02,00) : 1.0
+x(05,05,01,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,01,00) : 1.0
+x(05,08,02,00) : 1.0
+x(05,09,01,01) : 1.0
+x(05,10,02,00) : 1.0
+x(06,01,01,00) : 1.0
+x(06,02,02,00) : 1.0
+x(06,03,01,01) : 1.0
+x(06,04,02,00) : 1.0
+x(06,05,01,00) : 1.0
+x(06,06,02,01) : 1.0
+x(06,07,01,00) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,02,00) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 247, in <module>
+    main()
+  File "CDTTP2.py", line 238, in main
+    SM.solve()
+  File "CDTTP2.py", line 78, in solve
+    self.represent_schdule()
+  File "CDTTP2.py", line 215, in represent_schdule
+    value = self.M.vars[i,r,j,ha].solution_value
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 252, in solution_value
+    self._check_model_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 111, in _check_model_has_solution
+    self.model.check_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 4775, in check_has_solution
+    self.fatal("Model<{0}> did not solve successfully", self.name)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 894, in fatal
+    self._error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Model<docplex_model1> did not solve successfully
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+x(01,01,01,00) : 1.0
+x(01,01,01,01) : 1.0
+x(01,01,02,00) : 1.0
+x(01,01,02,01) : 1.0
+x(01,01,03,00) : 1.0
+x(01,01,03,01) : 1.0
+x(01,01,04,00) : 1.0
+x(01,01,04,01) : 1.0
+x(01,01,05,00) : 1.0
+x(01,01,05,01) : 1.0
+x(01,01,06,00) : 1.0
+x(01,01,06,01) : 1.0
+x(02,01,01,00) : 1.0
+x(02,01,01,01) : 1.0
+x(02,01,02,00) : 1.0
+x(02,01,02,01) : 1.0
+x(02,01,03,00) : 1.0
+x(02,01,03,01) : 1.0
+x(02,01,04,00) : 1.0
+x(02,01,04,01) : 1.0
+x(02,01,05,00) : 1.0
+x(02,01,05,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,01,06,01) : 1.0
+x(03,01,01,00) : 1.0
+x(03,01,01,01) : 1.0
+x(03,01,02,00) : 1.0
+x(03,01,02,01) : 1.0
+x(03,01,03,00) : 1.0
+x(03,01,03,01) : 1.0
+x(03,01,04,00) : 1.0
+x(03,01,04,01) : 1.0
+x(03,01,05,00) : 1.0
+x(03,01,05,01) : 1.0
+x(03,01,06,00) : 1.0
+x(03,01,06,01) : 1.0
+x(04,01,01,00) : 1.0
+x(04,01,01,01) : 1.0
+x(04,01,02,00) : 1.0
+x(04,01,02,01) : 1.0
+x(04,01,03,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,01,04,00) : 1.0
+x(04,01,04,01) : 1.0
+x(04,01,05,00) : 1.0
+x(04,01,05,01) : 1.0
+x(04,01,06,00) : 1.0
+x(04,01,06,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,01,01,01) : 1.0
+x(05,01,02,00) : 1.0
+x(05,01,02,01) : 1.0
+x(05,01,03,00) : 1.0
+x(05,01,03,01) : 1.0
+x(05,01,04,00) : 1.0
+x(05,01,04,01) : 1.0
+x(05,01,05,00) : 1.0
+x(05,01,05,01) : 1.0
+x(05,01,06,00) : 1.0
+x(05,01,06,01) : 1.0
+x(06,01,01,00) : 1.0
+x(06,01,01,01) : 1.0
+x(06,01,02,00) : 1.0
+x(06,01,02,01) : 1.0
+x(06,01,03,00) : 1.0
+x(06,01,03,01) : 1.0
+x(06,01,04,00) : 1.0
+x(06,01,04,01) : 1.0
+x(06,01,05,00) : 1.0
+x(06,01,05,01) : 1.0
+x(06,01,06,00) : 1.0
+x(06,01,06,01) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+x(01,01,01,00) : 1.0
+x(01,01,01,01) : 1.0
+x(01,01,02,00) : 1.0
+x(01,01,02,01) : 1.0
+x(01,01,03,00) : 1.0
+x(01,01,03,01) : 1.0
+x(01,01,04,00) : 1.0
+x(01,01,04,01) : 1.0
+x(01,01,05,00) : 1.0
+x(01,01,05,01) : 1.0
+x(01,01,06,00) : 1.0
+x(01,01,06,01) : 1.0
+x(02,01,01,00) : 1.0
+x(02,01,01,01) : 1.0
+x(02,01,02,00) : 1.0
+x(02,01,02,01) : 1.0
+x(02,01,03,00) : 1.0
+x(02,01,03,01) : 1.0
+x(02,01,04,00) : 1.0
+x(02,01,04,01) : 1.0
+x(02,01,05,00) : 1.0
+x(02,01,05,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,01,06,01) : 1.0
+x(03,01,01,00) : 1.0
+x(03,01,01,01) : 1.0
+x(03,01,02,00) : 1.0
+x(03,01,02,01) : 1.0
+x(03,01,03,00) : 1.0
+x(03,01,03,01) : 1.0
+x(03,01,04,00) : 1.0
+x(03,01,04,01) : 1.0
+x(03,01,05,00) : 1.0
+x(03,01,05,01) : 1.0
+x(03,01,06,00) : 1.0
+x(03,01,06,01) : 1.0
+x(04,01,01,00) : 1.0
+x(04,01,01,01) : 1.0
+x(04,01,02,00) : 1.0
+x(04,01,02,01) : 1.0
+x(04,01,03,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,01,04,00) : 1.0
+x(04,01,04,01) : 1.0
+x(04,01,05,00) : 1.0
+x(04,01,05,01) : 1.0
+x(04,01,06,00) : 1.0
+x(04,01,06,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,01,01,01) : 1.0
+x(05,01,02,00) : 1.0
+x(05,01,02,01) : 1.0
+x(05,01,03,00) : 1.0
+x(05,01,03,01) : 1.0
+x(05,01,04,00) : 1.0
+x(05,01,04,01) : 1.0
+x(05,01,05,00) : 1.0
+x(05,01,05,01) : 1.0
+x(05,01,06,00) : 1.0
+x(05,01,06,01) : 1.0
+x(06,01,01,00) : 1.0
+x(06,01,01,01) : 1.0
+x(06,01,02,00) : 1.0
+x(06,01,02,01) : 1.0
+x(06,01,03,00) : 1.0
+x(06,01,03,01) : 1.0
+x(06,01,04,00) : 1.0
+x(06,01,04,01) : 1.0
+x(06,01,05,00) : 1.0
+x(06,01,05,01) : 1.0
+x(06,01,06,00) : 1.0
+x(06,01,06,01) : 1.0
+^[[A
+^C^[[A^Z
+zsh: suspended  python CDTTP2.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 247, in <module>
+    main()
+  File "CDTTP2.py", line 238, in main
+    SM.solve()
+  File "CDTTP2.py", line 78, in solve
+    self.represent_schdule()
+  File "CDTTP2.py", line 215, in represent_schdule
+    value = self.M.vars[i,r,j,ha].solution_value
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/linear.py", line 252, in solution_value
+    self._check_model_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/basic.py", line 111, in _check_model_has_solution
+    self.model.check_has_solution()
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 4775, in check_has_solution
+    self.fatal("Model<{0}> did not solve successfully", self.name)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 894, in fatal
+    self._error_handler.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Model<docplex_model1> did not solve successfully
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+x(01,01,01,00) : 1.0
+x(01,01,01,01) : 1.0
+x(01,01,02,00) : 1.0
+x(01,01,02,01) : 1.0
+x(01,01,03,00) : 1.0
+x(01,01,03,01) : 1.0
+x(01,01,04,00) : 1.0
+x(01,01,04,01) : 1.0
+x(01,01,05,00) : 1.0
+x(01,01,05,01) : 1.0
+x(01,01,06,00) : 1.0
+x(01,01,06,01) : 1.0
+x(02,01,01,00) : 1.0
+x(02,01,01,01) : 1.0
+x(02,01,02,00) : 1.0
+x(02,01,02,01) : 1.0
+x(02,01,03,00) : 1.0
+x(02,01,03,01) : 1.0
+x(02,01,04,00) : 1.0
+x(02,01,04,01) : 1.0
+x(02,01,05,00) : 1.0
+x(02,01,05,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,01,06,01) : 1.0
+x(03,01,01,00) : 1.0
+x(03,01,01,01) : 1.0
+x(03,01,02,00) : 1.0
+x(03,01,02,01) : 1.0
+x(03,01,03,00) : 1.0
+x(03,01,03,01) : 1.0
+x(03,01,04,00) : 1.0
+x(03,01,04,01) : 1.0
+x(03,01,05,00) : 1.0
+x(03,01,05,01) : 1.0
+x(03,01,06,00) : 1.0
+x(03,01,06,01) : 1.0
+x(04,01,01,00) : 1.0
+x(04,01,01,01) : 1.0
+x(04,01,02,00) : 1.0
+x(04,01,02,01) : 1.0
+x(04,01,03,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,01,04,00) : 1.0
+x(04,01,04,01) : 1.0
+x(04,01,05,00) : 1.0
+x(04,01,05,01) : 1.0
+x(04,01,06,00) : 1.0
+x(04,01,06,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,01,01,01) : 1.0
+x(05,01,02,00) : 1.0
+x(05,01,02,01) : 1.0
+x(05,01,03,00) : 1.0
+x(05,01,03,01) : 1.0
+x(05,01,04,00) : 1.0
+x(05,01,04,01) : 1.0
+x(05,01,05,00) : 1.0
+x(05,01,05,01) : 1.0
+x(05,01,06,00) : 1.0
+x(05,01,06,01) : 1.0
+x(06,01,01,00) : 1.0
+x(06,01,01,01) : 1.0
+x(06,01,02,00) : 1.0
+x(06,01,02,01) : 1.0
+x(06,01,03,00) : 1.0
+x(06,01,03,01) : 1.0
+x(06,01,04,00) : 1.0
+x(06,01,04,01) : 1.0
+x(06,01,05,00) : 1.0
+x(06,01,05,01) : 1.0
+x(06,01,06,00) : 1.0
+x(06,01,06,01) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  fg
+[2]  - continued  python CDTTP2.py
+Traceback (most recent call last):
+  File "CDTTP2.py", line 247, in <module>
+    
+  File "CDTTP2.py", line 241, in main
+    SM.print_solution_values()
+  File "CDTTP2.py", line 230, in display_schedule
+    
+  File "/Users/petite/opt/anaconda3/lib/python3.7/tkinter/__init__.py", line 1283, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+2 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+3 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+4 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+5 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+6 1
+x(01,01,02,00) : 1.0
+x(01,01,02,01) : 1.0
+x(01,01,03,00) : 1.0
+x(01,01,03,01) : 1.0
+x(01,01,04,00) : 1.0
+x(01,01,04,01) : 1.0
+x(01,01,05,00) : 1.0
+x(01,01,05,01) : 1.0
+x(01,01,06,00) : 1.0
+x(01,01,06,01) : 1.0
+x(02,01,01,00) : 1.0
+x(02,01,01,01) : 1.0
+x(02,01,03,00) : 1.0
+x(02,01,03,01) : 1.0
+x(02,01,04,00) : 1.0
+x(02,01,04,01) : 1.0
+x(02,01,05,00) : 1.0
+x(02,01,05,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,01,06,01) : 1.0
+x(03,01,01,00) : 1.0
+x(03,01,01,01) : 1.0
+x(03,01,02,00) : 1.0
+x(03,01,02,01) : 1.0
+x(03,01,04,00) : 1.0
+x(03,01,04,01) : 1.0
+x(03,01,05,00) : 1.0
+x(03,01,05,01) : 1.0
+x(03,01,06,00) : 1.0
+x(03,01,06,01) : 1.0
+x(04,01,01,00) : 1.0
+x(04,01,01,01) : 1.0
+x(04,01,02,00) : 1.0
+x(04,01,02,01) : 1.0
+x(04,01,03,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,01,05,00) : 1.0
+x(04,01,05,01) : 1.0
+x(04,01,06,00) : 1.0
+x(04,01,06,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,01,01,01) : 1.0
+x(05,01,02,00) : 1.0
+x(05,01,02,01) : 1.0
+x(05,01,03,00) : 1.0
+x(05,01,03,01) : 1.0
+x(05,01,04,00) : 1.0
+x(05,01,04,01) : 1.0
+x(05,01,06,00) : 1.0
+x(05,01,06,01) : 1.0
+x(06,01,01,00) : 1.0
+x(06,01,01,01) : 1.0
+x(06,01,02,00) : 1.0
+x(06,01,02,01) : 1.0
+x(06,01,03,00) : 1.0
+x(06,01,03,01) : 1.0
+x(06,01,04,00) : 1.0
+x(06,01,04,01) : 1.0
+x(06,01,05,00) : 1.0
+x(06,01,05,01) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,02,01) : 1.0
+x(01,02,02,00) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,05,01) : 1.0
+x(01,05,03,00) : 1.0
+x(01,06,05,00) : 1.0
+x(01,07,03,01) : 1.0
+x(01,08,04,00) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,06,01) : 1.0
+x(02,01,01,00) : 1.0
+x(02,02,03,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,05,00) : 1.0
+x(02,06,06,01) : 1.0
+x(02,07,06,00) : 1.0
+x(02,08,01,01) : 1.0
+x(02,09,03,00) : 1.0
+x(02,10,04,01) : 1.0
+x(03,01,02,01) : 1.0
+x(03,02,05,00) : 1.0
+x(03,03,01,00) : 1.0
+x(03,04,04,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,02,00) : 1.0
+x(03,07,04,00) : 1.0
+x(03,08,01,01) : 1.0
+x(03,09,06,00) : 1.0
+x(03,10,05,01) : 1.0
+x(04,01,05,01) : 1.0
+x(04,02,02,01) : 1.0
+x(04,03,03,01) : 1.0
+x(04,04,03,00) : 1.0
+x(04,05,05,00) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,06,01) : 1.0
+x(04,08,02,00) : 1.0
+x(04,09,01,01) : 1.0
+x(04,10,01,00) : 1.0
+x(05,01,06,01) : 1.0
+x(05,02,01,01) : 1.0
+x(05,03,03,00) : 1.0
+x(05,04,02,01) : 1.0
+x(05,05,03,01) : 1.0
+x(05,06,02,00) : 1.0
+x(05,07,04,01) : 1.0
+x(05,08,06,00) : 1.0
+x(05,09,04,00) : 1.0
+x(05,10,01,00) : 1.0
+x(06,01,01,00) : 1.0
+x(06,02,03,01) : 1.0
+x(06,03,05,01) : 1.0
+x(06,04,04,00) : 1.0
+x(06,05,02,01) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,02,00) : 1.0
+x(06,08,03,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,05,00) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+^[[A%                                                                                                
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+integer optimal solution
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  code /Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py                                                                
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+0.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+0.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+0.0
+[]
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+0.0
+Traceback (most recent call last):
+  File "CDTTP2.py", line 252, in <module>
+    main()
+  File "CDTTP2.py", line 243, in main
+    print(SM.M.find_matching_linear_constraints(""))
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 1493, in find_matching_linear_constraints
+    return self._find_matching_objs(self.generate_user_linear_constraints, pattern, match_case)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py", line 1469, in _find_matching_objs
+    self._checker.typecheck_string(pattern, accept_empty=False, accept_none=False, caller="Model.find_matching_vars")
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/tck.py", line 474, in typecheck_string
+    self.fatal("{0}Expecting a non-empty string", s_caller)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/tck.py", line 251, in fatal
+    self._logger.fatal(msg, args)
+  File "/Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/error_handler.py", line 210, in fatal
+    raise DOcplexException(resolved_message)
+docplex.mp.utils.DOcplexException: Model.find_matching_vars: Expecting a non-empty string
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+0.0
+[]
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  code /Users/petite/opt/anaconda3/lib/python3.7/site-packages/docplex/mp/model.py
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py                                                                
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,00) : 1.0
+x(01,02,06,01) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,03,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,03,01) : 1.0
+x(01,07,04,00) : 1.0
+x(01,08,05,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,02,01) : 1.0
+x(02,01,06,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,05,01) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,00) : 1.0
+x(02,07,03,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,03,01) : 1.0
+x(02,10,01,00) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,05,01) : 1.0
+x(03,03,06,00) : 1.0
+x(03,04,01,01) : 1.0
+x(03,05,06,01) : 1.0
+x(03,06,01,00) : 1.0
+x(03,07,02,01) : 1.0
+x(03,08,04,01) : 1.0
+x(03,09,02,00) : 1.0
+x(03,10,05,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,05,01) : 1.0
+x(04,06,06,00) : 1.0
+x(04,07,01,01) : 1.0
+x(04,08,03,00) : 1.0
+x(04,09,05,00) : 1.0
+x(04,10,06,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,03,00) : 1.0
+x(05,03,02,00) : 1.0
+x(05,04,06,01) : 1.0
+x(05,05,04,00) : 1.0
+x(05,06,02,01) : 1.0
+x(05,07,06,00) : 1.0
+x(05,08,01,00) : 1.0
+x(05,09,04,01) : 1.0
+x(05,10,03,01) : 1.0
+x(06,01,02,01) : 1.0
+x(06,02,01,00) : 1.0
+x(06,03,03,01) : 1.0
+x(06,04,05,00) : 1.0
+x(06,05,03,00) : 1.0
+x(06,06,04,01) : 1.0
+x(06,07,05,01) : 1.0
+x(06,08,02,00) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,04,00) : 1.0
+0.0
+[]
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+x(1_1_1_0)+x(1_1_2_0)+x(1_1_3_0)+x(1_1_4_0)+x(1_1_5_0)+x(1_1_6_0)+x(1_2_1_0)+x(1_2_2_0)+x(1_2_3_0)+x(1_2_4_0)+x(1_2_5_0)+x(1_2_6_0)-1
+x(1_1_1_1)+x(1_1_2_1)+x(1_1_3_1)+x(1_1_4_1)+x(1_1_5_1)+x(1_1_6_1)+x(1_2_1_1)+x(1_2_2_1)+x(1_2_3_1)+x(1_2_4_1)+x(1_2_5_1)+x(1_2_6_1)-1
+x(1_2_1_0)+x(1_2_2_0)+x(1_2_3_0)+x(1_2_4_0)+x(1_2_5_0)+x(1_2_6_0)+x(1_3_1_0)+x(1_3_2_0)+x(1_3_3_0)+x(1_3_4_0)+x(1_3_5_0)+x(1_3_6_0)-1
+x(1_2_1_1)+x(1_2_2_1)+x(1_2_3_1)+x(1_2_4_1)+x(1_2_5_1)+x(1_2_6_1)+x(1_3_1_1)+x(1_3_2_1)+x(1_3_3_1)+x(1_3_4_1)+x(1_3_5_1)+x(1_3_6_1)-1
+x(1_3_1_0)+x(1_3_2_0)+x(1_3_3_0)+x(1_3_4_0)+x(1_3_5_0)+x(1_3_6_0)+x(1_4_1_0)+x(1_4_2_0)+x(1_4_3_0)+x(1_4_4_0)+x(1_4_5_0)+x(1_4_6_0)-1
+x(1_3_1_1)+x(1_3_2_1)+x(1_3_3_1)+x(1_3_4_1)+x(1_3_5_1)+x(1_3_6_1)+x(1_4_1_1)+x(1_4_2_1)+x(1_4_3_1)+x(1_4_4_1)+x(1_4_5_1)+x(1_4_6_1)-1
+x(1_4_1_0)+x(1_4_2_0)+x(1_4_3_0)+x(1_4_4_0)+x(1_4_5_0)+x(1_4_6_0)+x(1_5_1_0)+x(1_5_2_0)+x(1_5_3_0)+x(1_5_4_0)+x(1_5_5_0)+x(1_5_6_0)-1
+x(1_4_1_1)+x(1_4_2_1)+x(1_4_3_1)+x(1_4_4_1)+x(1_4_5_1)+x(1_4_6_1)+x(1_5_1_1)+x(1_5_2_1)+x(1_5_3_1)+x(1_5_4_1)+x(1_5_5_1)+x(1_5_6_1)-1
+x(1_5_1_0)+x(1_5_2_0)+x(1_5_3_0)+x(1_5_4_0)+x(1_5_5_0)+x(1_5_6_0)+x(1_6_1_0)+x(1_6_2_0)+x(1_6_3_0)+x(1_6_4_0)+x(1_6_5_0)+x(1_6_6_0)-1
+x(1_5_1_1)+x(1_5_2_1)+x(1_5_3_1)+x(1_5_4_1)+x(1_5_5_1)+x(1_5_6_1)+x(1_6_1_1)+x(1_6_2_1)+x(1_6_3_1)+x(1_6_4_1)+x(1_6_5_1)+x(1_6_6_1)-1
+x(1_6_1_0)+x(1_6_2_0)+x(1_6_3_0)+x(1_6_4_0)+x(1_6_5_0)+x(1_6_6_0)+x(1_7_1_0)+x(1_7_2_0)+x(1_7_3_0)+x(1_7_4_0)+x(1_7_5_0)+x(1_7_6_0)-1
+x(1_6_1_1)+x(1_6_2_1)+x(1_6_3_1)+x(1_6_4_1)+x(1_6_5_1)+x(1_6_6_1)+x(1_7_1_1)+x(1_7_2_1)+x(1_7_3_1)+x(1_7_4_1)+x(1_7_5_1)+x(1_7_6_1)-1
+x(1_7_1_0)+x(1_7_2_0)+x(1_7_3_0)+x(1_7_4_0)+x(1_7_5_0)+x(1_7_6_0)+x(1_8_1_0)+x(1_8_2_0)+x(1_8_3_0)+x(1_8_4_0)+x(1_8_5_0)+x(1_8_6_0)-1
+x(1_7_1_1)+x(1_7_2_1)+x(1_7_3_1)+x(1_7_4_1)+x(1_7_5_1)+x(1_7_6_1)+x(1_8_1_1)+x(1_8_2_1)+x(1_8_3_1)+x(1_8_4_1)+x(1_8_5_1)+x(1_8_6_1)-1
+x(1_8_1_0)+x(1_8_2_0)+x(1_8_3_0)+x(1_8_4_0)+x(1_8_5_0)+x(1_8_6_0)+x(1_9_1_0)+x(1_9_2_0)+x(1_9_3_0)+x(1_9_4_0)+x(1_9_5_0)+x(1_9_6_0)-1
+x(1_8_1_1)+x(1_8_2_1)+x(1_8_3_1)+x(1_8_4_1)+x(1_8_5_1)+x(1_8_6_1)+x(1_9_1_1)+x(1_9_2_1)+x(1_9_3_1)+x(1_9_4_1)+x(1_9_5_1)+x(1_9_6_1)-1
+x(1_9_1_0)+x(1_9_2_0)+x(1_9_3_0)+x(1_9_4_0)+x(1_9_5_0)+x(1_9_6_0)+x(1_10_1_0)+x(1_10_2_0)+x(1_10_3_0)+x(1_10_4_0)+x(1_10_5_0)+x(1_10_6_0)-1
+x(1_9_1_1)+x(1_9_2_1)+x(1_9_3_1)+x(1_9_4_1)+x(1_9_5_1)+x(1_9_6_1)+x(1_10_1_1)+x(1_10_2_1)+x(1_10_3_1)+x(1_10_4_1)+x(1_10_5_1)+x(1_10_6_1)-1
+x(2_1_1_0)+x(2_1_2_0)+x(2_1_3_0)+x(2_1_4_0)+x(2_1_5_0)+x(2_1_6_0)+x(2_2_1_0)+x(2_2_2_0)+x(2_2_3_0)+x(2_2_4_0)+x(2_2_5_0)+x(2_2_6_0)-1
+x(2_1_1_1)+x(2_1_2_1)+x(2_1_3_1)+x(2_1_4_1)+x(2_1_5_1)+x(2_1_6_1)+x(2_2_1_1)+x(2_2_2_1)+x(2_2_3_1)+x(2_2_4_1)+x(2_2_5_1)+x(2_2_6_1)-1
+x(2_2_1_0)+x(2_2_2_0)+x(2_2_3_0)+x(2_2_4_0)+x(2_2_5_0)+x(2_2_6_0)+x(2_3_1_0)+x(2_3_2_0)+x(2_3_3_0)+x(2_3_4_0)+x(2_3_5_0)+x(2_3_6_0)-1
+x(2_2_1_1)+x(2_2_2_1)+x(2_2_3_1)+x(2_2_4_1)+x(2_2_5_1)+x(2_2_6_1)+x(2_3_1_1)+x(2_3_2_1)+x(2_3_3_1)+x(2_3_4_1)+x(2_3_5_1)+x(2_3_6_1)-1
+x(2_3_1_0)+x(2_3_2_0)+x(2_3_3_0)+x(2_3_4_0)+x(2_3_5_0)+x(2_3_6_0)+x(2_4_1_0)+x(2_4_2_0)+x(2_4_3_0)+x(2_4_4_0)+x(2_4_5_0)+x(2_4_6_0)-1
+x(2_3_1_1)+x(2_3_2_1)+x(2_3_3_1)+x(2_3_4_1)+x(2_3_5_1)+x(2_3_6_1)+x(2_4_1_1)+x(2_4_2_1)+x(2_4_3_1)+x(2_4_4_1)+x(2_4_5_1)+x(2_4_6_1)-1
+x(2_4_1_0)+x(2_4_2_0)+x(2_4_3_0)+x(2_4_4_0)+x(2_4_5_0)+x(2_4_6_0)+x(2_5_1_0)+x(2_5_2_0)+x(2_5_3_0)+x(2_5_4_0)+x(2_5_5_0)+x(2_5_6_0)-1
+x(2_4_1_1)+x(2_4_2_1)+x(2_4_3_1)+x(2_4_4_1)+x(2_4_5_1)+x(2_4_6_1)+x(2_5_1_1)+x(2_5_2_1)+x(2_5_3_1)+x(2_5_4_1)+x(2_5_5_1)+x(2_5_6_1)-1
+x(2_5_1_0)+x(2_5_2_0)+x(2_5_3_0)+x(2_5_4_0)+x(2_5_5_0)+x(2_5_6_0)+x(2_6_1_0)+x(2_6_2_0)+x(2_6_3_0)+x(2_6_4_0)+x(2_6_5_0)+x(2_6_6_0)-1
+x(2_5_1_1)+x(2_5_2_1)+x(2_5_3_1)+x(2_5_4_1)+x(2_5_5_1)+x(2_5_6_1)+x(2_6_1_1)+x(2_6_2_1)+x(2_6_3_1)+x(2_6_4_1)+x(2_6_5_1)+x(2_6_6_1)-1
+x(2_6_1_0)+x(2_6_2_0)+x(2_6_3_0)+x(2_6_4_0)+x(2_6_5_0)+x(2_6_6_0)+x(2_7_1_0)+x(2_7_2_0)+x(2_7_3_0)+x(2_7_4_0)+x(2_7_5_0)+x(2_7_6_0)-1
+x(2_6_1_1)+x(2_6_2_1)+x(2_6_3_1)+x(2_6_4_1)+x(2_6_5_1)+x(2_6_6_1)+x(2_7_1_1)+x(2_7_2_1)+x(2_7_3_1)+x(2_7_4_1)+x(2_7_5_1)+x(2_7_6_1)-1
+x(2_7_1_0)+x(2_7_2_0)+x(2_7_3_0)+x(2_7_4_0)+x(2_7_5_0)+x(2_7_6_0)+x(2_8_1_0)+x(2_8_2_0)+x(2_8_3_0)+x(2_8_4_0)+x(2_8_5_0)+x(2_8_6_0)-1
+x(2_7_1_1)+x(2_7_2_1)+x(2_7_3_1)+x(2_7_4_1)+x(2_7_5_1)+x(2_7_6_1)+x(2_8_1_1)+x(2_8_2_1)+x(2_8_3_1)+x(2_8_4_1)+x(2_8_5_1)+x(2_8_6_1)-1
+x(2_8_1_0)+x(2_8_2_0)+x(2_8_3_0)+x(2_8_4_0)+x(2_8_5_0)+x(2_8_6_0)+x(2_9_1_0)+x(2_9_2_0)+x(2_9_3_0)+x(2_9_4_0)+x(2_9_5_0)+x(2_9_6_0)-1
+x(2_8_1_1)+x(2_8_2_1)+x(2_8_3_1)+x(2_8_4_1)+x(2_8_5_1)+x(2_8_6_1)+x(2_9_1_1)+x(2_9_2_1)+x(2_9_3_1)+x(2_9_4_1)+x(2_9_5_1)+x(2_9_6_1)-1
+x(2_9_1_0)+x(2_9_2_0)+x(2_9_3_0)+x(2_9_4_0)+x(2_9_5_0)+x(2_9_6_0)+x(2_10_1_0)+x(2_10_2_0)+x(2_10_3_0)+x(2_10_4_0)+x(2_10_5_0)+x(2_10_6_0)-1
+x(2_9_1_1)+x(2_9_2_1)+x(2_9_3_1)+x(2_9_4_1)+x(2_9_5_1)+x(2_9_6_1)+x(2_10_1_1)+x(2_10_2_1)+x(2_10_3_1)+x(2_10_4_1)+x(2_10_5_1)+x(2_10_6_1)-1
+x(3_1_1_0)+x(3_1_2_0)+x(3_1_3_0)+x(3_1_4_0)+x(3_1_5_0)+x(3_1_6_0)+x(3_2_1_0)+x(3_2_2_0)+x(3_2_3_0)+x(3_2_4_0)+x(3_2_5_0)+x(3_2_6_0)-1
+x(3_1_1_1)+x(3_1_2_1)+x(3_1_3_1)+x(3_1_4_1)+x(3_1_5_1)+x(3_1_6_1)+x(3_2_1_1)+x(3_2_2_1)+x(3_2_3_1)+x(3_2_4_1)+x(3_2_5_1)+x(3_2_6_1)-1
+x(3_2_1_0)+x(3_2_2_0)+x(3_2_3_0)+x(3_2_4_0)+x(3_2_5_0)+x(3_2_6_0)+x(3_3_1_0)+x(3_3_2_0)+x(3_3_3_0)+x(3_3_4_0)+x(3_3_5_0)+x(3_3_6_0)-1
+x(3_2_1_1)+x(3_2_2_1)+x(3_2_3_1)+x(3_2_4_1)+x(3_2_5_1)+x(3_2_6_1)+x(3_3_1_1)+x(3_3_2_1)+x(3_3_3_1)+x(3_3_4_1)+x(3_3_5_1)+x(3_3_6_1)-1
+x(3_3_1_0)+x(3_3_2_0)+x(3_3_3_0)+x(3_3_4_0)+x(3_3_5_0)+x(3_3_6_0)+x(3_4_1_0)+x(3_4_2_0)+x(3_4_3_0)+x(3_4_4_0)+x(3_4_5_0)+x(3_4_6_0)-1
+x(3_3_1_1)+x(3_3_2_1)+x(3_3_3_1)+x(3_3_4_1)+x(3_3_5_1)+x(3_3_6_1)+x(3_4_1_1)+x(3_4_2_1)+x(3_4_3_1)+x(3_4_4_1)+x(3_4_5_1)+x(3_4_6_1)-1
+x(3_4_1_0)+x(3_4_2_0)+x(3_4_3_0)+x(3_4_4_0)+x(3_4_5_0)+x(3_4_6_0)+x(3_5_1_0)+x(3_5_2_0)+x(3_5_3_0)+x(3_5_4_0)+x(3_5_5_0)+x(3_5_6_0)-1
+x(3_4_1_1)+x(3_4_2_1)+x(3_4_3_1)+x(3_4_4_1)+x(3_4_5_1)+x(3_4_6_1)+x(3_5_1_1)+x(3_5_2_1)+x(3_5_3_1)+x(3_5_4_1)+x(3_5_5_1)+x(3_5_6_1)-1
+x(3_5_1_0)+x(3_5_2_0)+x(3_5_3_0)+x(3_5_4_0)+x(3_5_5_0)+x(3_5_6_0)+x(3_6_1_0)+x(3_6_2_0)+x(3_6_3_0)+x(3_6_4_0)+x(3_6_5_0)+x(3_6_6_0)-1
+x(3_5_1_1)+x(3_5_2_1)+x(3_5_3_1)+x(3_5_4_1)+x(3_5_5_1)+x(3_5_6_1)+x(3_6_1_1)+x(3_6_2_1)+x(3_6_3_1)+x(3_6_4_1)+x(3_6_5_1)+x(3_6_6_1)-1
+x(3_6_1_0)+x(3_6_2_0)+x(3_6_3_0)+x(3_6_4_0)+x(3_6_5_0)+x(3_6_6_0)+x(3_7_1_0)+x(3_7_2_0)+x(3_7_3_0)+x(3_7_4_0)+x(3_7_5_0)+x(3_7_6_0)-1
+x(3_6_1_1)+x(3_6_2_1)+x(3_6_3_1)+x(3_6_4_1)+x(3_6_5_1)+x(3_6_6_1)+x(3_7_1_1)+x(3_7_2_1)+x(3_7_3_1)+x(3_7_4_1)+x(3_7_5_1)+x(3_7_6_1)-1
+x(3_7_1_0)+x(3_7_2_0)+x(3_7_3_0)+x(3_7_4_0)+x(3_7_5_0)+x(3_7_6_0)+x(3_8_1_0)+x(3_8_2_0)+x(3_8_3_0)+x(3_8_4_0)+x(3_8_5_0)+x(3_8_6_0)-1
+x(3_7_1_1)+x(3_7_2_1)+x(3_7_3_1)+x(3_7_4_1)+x(3_7_5_1)+x(3_7_6_1)+x(3_8_1_1)+x(3_8_2_1)+x(3_8_3_1)+x(3_8_4_1)+x(3_8_5_1)+x(3_8_6_1)-1
+x(3_8_1_0)+x(3_8_2_0)+x(3_8_3_0)+x(3_8_4_0)+x(3_8_5_0)+x(3_8_6_0)+x(3_9_1_0)+x(3_9_2_0)+x(3_9_3_0)+x(3_9_4_0)+x(3_9_5_0)+x(3_9_6_0)-1
+x(3_8_1_1)+x(3_8_2_1)+x(3_8_3_1)+x(3_8_4_1)+x(3_8_5_1)+x(3_8_6_1)+x(3_9_1_1)+x(3_9_2_1)+x(3_9_3_1)+x(3_9_4_1)+x(3_9_5_1)+x(3_9_6_1)-1
+x(3_9_1_0)+x(3_9_2_0)+x(3_9_3_0)+x(3_9_4_0)+x(3_9_5_0)+x(3_9_6_0)+x(3_10_1_0)+x(3_10_2_0)+x(3_10_3_0)+x(3_10_4_0)+x(3_10_5_0)+x(3_10_6_0)-1
+x(3_9_1_1)+x(3_9_2_1)+x(3_9_3_1)+x(3_9_4_1)+x(3_9_5_1)+x(3_9_6_1)+x(3_10_1_1)+x(3_10_2_1)+x(3_10_3_1)+x(3_10_4_1)+x(3_10_5_1)+x(3_10_6_1)-1
+x(4_1_1_0)+x(4_1_2_0)+x(4_1_3_0)+x(4_1_4_0)+x(4_1_5_0)+x(4_1_6_0)+x(4_2_1_0)+x(4_2_2_0)+x(4_2_3_0)+x(4_2_4_0)+x(4_2_5_0)+x(4_2_6_0)-1
+x(4_1_1_1)+x(4_1_2_1)+x(4_1_3_1)+x(4_1_4_1)+x(4_1_5_1)+x(4_1_6_1)+x(4_2_1_1)+x(4_2_2_1)+x(4_2_3_1)+x(4_2_4_1)+x(4_2_5_1)+x(4_2_6_1)-1
+x(4_2_1_0)+x(4_2_2_0)+x(4_2_3_0)+x(4_2_4_0)+x(4_2_5_0)+x(4_2_6_0)+x(4_3_1_0)+x(4_3_2_0)+x(4_3_3_0)+x(4_3_4_0)+x(4_3_5_0)+x(4_3_6_0)-1
+x(4_2_1_1)+x(4_2_2_1)+x(4_2_3_1)+x(4_2_4_1)+x(4_2_5_1)+x(4_2_6_1)+x(4_3_1_1)+x(4_3_2_1)+x(4_3_3_1)+x(4_3_4_1)+x(4_3_5_1)+x(4_3_6_1)-1
+x(4_3_1_0)+x(4_3_2_0)+x(4_3_3_0)+x(4_3_4_0)+x(4_3_5_0)+x(4_3_6_0)+x(4_4_1_0)+x(4_4_2_0)+x(4_4_3_0)+x(4_4_4_0)+x(4_4_5_0)+x(4_4_6_0)-1
+x(4_3_1_1)+x(4_3_2_1)+x(4_3_3_1)+x(4_3_4_1)+x(4_3_5_1)+x(4_3_6_1)+x(4_4_1_1)+x(4_4_2_1)+x(4_4_3_1)+x(4_4_4_1)+x(4_4_5_1)+x(4_4_6_1)-1
+x(4_4_1_0)+x(4_4_2_0)+x(4_4_3_0)+x(4_4_4_0)+x(4_4_5_0)+x(4_4_6_0)+x(4_5_1_0)+x(4_5_2_0)+x(4_5_3_0)+x(4_5_4_0)+x(4_5_5_0)+x(4_5_6_0)-1
+x(4_4_1_1)+x(4_4_2_1)+x(4_4_3_1)+x(4_4_4_1)+x(4_4_5_1)+x(4_4_6_1)+x(4_5_1_1)+x(4_5_2_1)+x(4_5_3_1)+x(4_5_4_1)+x(4_5_5_1)+x(4_5_6_1)-1
+x(4_5_1_0)+x(4_5_2_0)+x(4_5_3_0)+x(4_5_4_0)+x(4_5_5_0)+x(4_5_6_0)+x(4_6_1_0)+x(4_6_2_0)+x(4_6_3_0)+x(4_6_4_0)+x(4_6_5_0)+x(4_6_6_0)-1
+x(4_5_1_1)+x(4_5_2_1)+x(4_5_3_1)+x(4_5_4_1)+x(4_5_5_1)+x(4_5_6_1)+x(4_6_1_1)+x(4_6_2_1)+x(4_6_3_1)+x(4_6_4_1)+x(4_6_5_1)+x(4_6_6_1)-1
+x(4_6_1_0)+x(4_6_2_0)+x(4_6_3_0)+x(4_6_4_0)+x(4_6_5_0)+x(4_6_6_0)+x(4_7_1_0)+x(4_7_2_0)+x(4_7_3_0)+x(4_7_4_0)+x(4_7_5_0)+x(4_7_6_0)-1
+x(4_6_1_1)+x(4_6_2_1)+x(4_6_3_1)+x(4_6_4_1)+x(4_6_5_1)+x(4_6_6_1)+x(4_7_1_1)+x(4_7_2_1)+x(4_7_3_1)+x(4_7_4_1)+x(4_7_5_1)+x(4_7_6_1)-1
+x(4_7_1_0)+x(4_7_2_0)+x(4_7_3_0)+x(4_7_4_0)+x(4_7_5_0)+x(4_7_6_0)+x(4_8_1_0)+x(4_8_2_0)+x(4_8_3_0)+x(4_8_4_0)+x(4_8_5_0)+x(4_8_6_0)-1
+x(4_7_1_1)+x(4_7_2_1)+x(4_7_3_1)+x(4_7_4_1)+x(4_7_5_1)+x(4_7_6_1)+x(4_8_1_1)+x(4_8_2_1)+x(4_8_3_1)+x(4_8_4_1)+x(4_8_5_1)+x(4_8_6_1)-1
+x(4_8_1_0)+x(4_8_2_0)+x(4_8_3_0)+x(4_8_4_0)+x(4_8_5_0)+x(4_8_6_0)+x(4_9_1_0)+x(4_9_2_0)+x(4_9_3_0)+x(4_9_4_0)+x(4_9_5_0)+x(4_9_6_0)-1
+x(4_8_1_1)+x(4_8_2_1)+x(4_8_3_1)+x(4_8_4_1)+x(4_8_5_1)+x(4_8_6_1)+x(4_9_1_1)+x(4_9_2_1)+x(4_9_3_1)+x(4_9_4_1)+x(4_9_5_1)+x(4_9_6_1)-1
+x(4_9_1_0)+x(4_9_2_0)+x(4_9_3_0)+x(4_9_4_0)+x(4_9_5_0)+x(4_9_6_0)+x(4_10_1_0)+x(4_10_2_0)+x(4_10_3_0)+x(4_10_4_0)+x(4_10_5_0)+x(4_10_6_0)-1
+x(4_9_1_1)+x(4_9_2_1)+x(4_9_3_1)+x(4_9_4_1)+x(4_9_5_1)+x(4_9_6_1)+x(4_10_1_1)+x(4_10_2_1)+x(4_10_3_1)+x(4_10_4_1)+x(4_10_5_1)+x(4_10_6_1)-1
+x(5_1_1_0)+x(5_1_2_0)+x(5_1_3_0)+x(5_1_4_0)+x(5_1_5_0)+x(5_1_6_0)+x(5_2_1_0)+x(5_2_2_0)+x(5_2_3_0)+x(5_2_4_0)+x(5_2_5_0)+x(5_2_6_0)-1
+x(5_1_1_1)+x(5_1_2_1)+x(5_1_3_1)+x(5_1_4_1)+x(5_1_5_1)+x(5_1_6_1)+x(5_2_1_1)+x(5_2_2_1)+x(5_2_3_1)+x(5_2_4_1)+x(5_2_5_1)+x(5_2_6_1)-1
+x(5_2_1_0)+x(5_2_2_0)+x(5_2_3_0)+x(5_2_4_0)+x(5_2_5_0)+x(5_2_6_0)+x(5_3_1_0)+x(5_3_2_0)+x(5_3_3_0)+x(5_3_4_0)+x(5_3_5_0)+x(5_3_6_0)-1
+x(5_2_1_1)+x(5_2_2_1)+x(5_2_3_1)+x(5_2_4_1)+x(5_2_5_1)+x(5_2_6_1)+x(5_3_1_1)+x(5_3_2_1)+x(5_3_3_1)+x(5_3_4_1)+x(5_3_5_1)+x(5_3_6_1)-1
+x(5_3_1_0)+x(5_3_2_0)+x(5_3_3_0)+x(5_3_4_0)+x(5_3_5_0)+x(5_3_6_0)+x(5_4_1_0)+x(5_4_2_0)+x(5_4_3_0)+x(5_4_4_0)+x(5_4_5_0)+x(5_4_6_0)-1
+x(5_3_1_1)+x(5_3_2_1)+x(5_3_3_1)+x(5_3_4_1)+x(5_3_5_1)+x(5_3_6_1)+x(5_4_1_1)+x(5_4_2_1)+x(5_4_3_1)+x(5_4_4_1)+x(5_4_5_1)+x(5_4_6_1)-1
+x(5_4_1_0)+x(5_4_2_0)+x(5_4_3_0)+x(5_4_4_0)+x(5_4_5_0)+x(5_4_6_0)+x(5_5_1_0)+x(5_5_2_0)+x(5_5_3_0)+x(5_5_4_0)+x(5_5_5_0)+x(5_5_6_0)-1
+x(5_4_1_1)+x(5_4_2_1)+x(5_4_3_1)+x(5_4_4_1)+x(5_4_5_1)+x(5_4_6_1)+x(5_5_1_1)+x(5_5_2_1)+x(5_5_3_1)+x(5_5_4_1)+x(5_5_5_1)+x(5_5_6_1)-1
+x(5_5_1_0)+x(5_5_2_0)+x(5_5_3_0)+x(5_5_4_0)+x(5_5_5_0)+x(5_5_6_0)+x(5_6_1_0)+x(5_6_2_0)+x(5_6_3_0)+x(5_6_4_0)+x(5_6_5_0)+x(5_6_6_0)-1
+x(5_5_1_1)+x(5_5_2_1)+x(5_5_3_1)+x(5_5_4_1)+x(5_5_5_1)+x(5_5_6_1)+x(5_6_1_1)+x(5_6_2_1)+x(5_6_3_1)+x(5_6_4_1)+x(5_6_5_1)+x(5_6_6_1)-1
+x(5_6_1_0)+x(5_6_2_0)+x(5_6_3_0)+x(5_6_4_0)+x(5_6_5_0)+x(5_6_6_0)+x(5_7_1_0)+x(5_7_2_0)+x(5_7_3_0)+x(5_7_4_0)+x(5_7_5_0)+x(5_7_6_0)-1
+x(5_6_1_1)+x(5_6_2_1)+x(5_6_3_1)+x(5_6_4_1)+x(5_6_5_1)+x(5_6_6_1)+x(5_7_1_1)+x(5_7_2_1)+x(5_7_3_1)+x(5_7_4_1)+x(5_7_5_1)+x(5_7_6_1)-1
+x(5_7_1_0)+x(5_7_2_0)+x(5_7_3_0)+x(5_7_4_0)+x(5_7_5_0)+x(5_7_6_0)+x(5_8_1_0)+x(5_8_2_0)+x(5_8_3_0)+x(5_8_4_0)+x(5_8_5_0)+x(5_8_6_0)-1
+x(5_7_1_1)+x(5_7_2_1)+x(5_7_3_1)+x(5_7_4_1)+x(5_7_5_1)+x(5_7_6_1)+x(5_8_1_1)+x(5_8_2_1)+x(5_8_3_1)+x(5_8_4_1)+x(5_8_5_1)+x(5_8_6_1)-1
+x(5_8_1_0)+x(5_8_2_0)+x(5_8_3_0)+x(5_8_4_0)+x(5_8_5_0)+x(5_8_6_0)+x(5_9_1_0)+x(5_9_2_0)+x(5_9_3_0)+x(5_9_4_0)+x(5_9_5_0)+x(5_9_6_0)-1
+x(5_8_1_1)+x(5_8_2_1)+x(5_8_3_1)+x(5_8_4_1)+x(5_8_5_1)+x(5_8_6_1)+x(5_9_1_1)+x(5_9_2_1)+x(5_9_3_1)+x(5_9_4_1)+x(5_9_5_1)+x(5_9_6_1)-1
+x(5_9_1_0)+x(5_9_2_0)+x(5_9_3_0)+x(5_9_4_0)+x(5_9_5_0)+x(5_9_6_0)+x(5_10_1_0)+x(5_10_2_0)+x(5_10_3_0)+x(5_10_4_0)+x(5_10_5_0)+x(5_10_6_0)-1
+x(5_9_1_1)+x(5_9_2_1)+x(5_9_3_1)+x(5_9_4_1)+x(5_9_5_1)+x(5_9_6_1)+x(5_10_1_1)+x(5_10_2_1)+x(5_10_3_1)+x(5_10_4_1)+x(5_10_5_1)+x(5_10_6_1)-1
+x(6_1_1_0)+x(6_1_2_0)+x(6_1_3_0)+x(6_1_4_0)+x(6_1_5_0)+x(6_1_6_0)+x(6_2_1_0)+x(6_2_2_0)+x(6_2_3_0)+x(6_2_4_0)+x(6_2_5_0)+x(6_2_6_0)-1
+x(6_1_1_1)+x(6_1_2_1)+x(6_1_3_1)+x(6_1_4_1)+x(6_1_5_1)+x(6_1_6_1)+x(6_2_1_1)+x(6_2_2_1)+x(6_2_3_1)+x(6_2_4_1)+x(6_2_5_1)+x(6_2_6_1)-1
+x(6_2_1_0)+x(6_2_2_0)+x(6_2_3_0)+x(6_2_4_0)+x(6_2_5_0)+x(6_2_6_0)+x(6_3_1_0)+x(6_3_2_0)+x(6_3_3_0)+x(6_3_4_0)+x(6_3_5_0)+x(6_3_6_0)-1
+x(6_2_1_1)+x(6_2_2_1)+x(6_2_3_1)+x(6_2_4_1)+x(6_2_5_1)+x(6_2_6_1)+x(6_3_1_1)+x(6_3_2_1)+x(6_3_3_1)+x(6_3_4_1)+x(6_3_5_1)+x(6_3_6_1)-1
+x(6_3_1_0)+x(6_3_2_0)+x(6_3_3_0)+x(6_3_4_0)+x(6_3_5_0)+x(6_3_6_0)+x(6_4_1_0)+x(6_4_2_0)+x(6_4_3_0)+x(6_4_4_0)+x(6_4_5_0)+x(6_4_6_0)-1
+x(6_3_1_1)+x(6_3_2_1)+x(6_3_3_1)+x(6_3_4_1)+x(6_3_5_1)+x(6_3_6_1)+x(6_4_1_1)+x(6_4_2_1)+x(6_4_3_1)+x(6_4_4_1)+x(6_4_5_1)+x(6_4_6_1)-1
+x(6_4_1_0)+x(6_4_2_0)+x(6_4_3_0)+x(6_4_4_0)+x(6_4_5_0)+x(6_4_6_0)+x(6_5_1_0)+x(6_5_2_0)+x(6_5_3_0)+x(6_5_4_0)+x(6_5_5_0)+x(6_5_6_0)-1
+x(6_4_1_1)+x(6_4_2_1)+x(6_4_3_1)+x(6_4_4_1)+x(6_4_5_1)+x(6_4_6_1)+x(6_5_1_1)+x(6_5_2_1)+x(6_5_3_1)+x(6_5_4_1)+x(6_5_5_1)+x(6_5_6_1)-1
+x(6_5_1_0)+x(6_5_2_0)+x(6_5_3_0)+x(6_5_4_0)+x(6_5_5_0)+x(6_5_6_0)+x(6_6_1_0)+x(6_6_2_0)+x(6_6_3_0)+x(6_6_4_0)+x(6_6_5_0)+x(6_6_6_0)-1
+x(6_5_1_1)+x(6_5_2_1)+x(6_5_3_1)+x(6_5_4_1)+x(6_5_5_1)+x(6_5_6_1)+x(6_6_1_1)+x(6_6_2_1)+x(6_6_3_1)+x(6_6_4_1)+x(6_6_5_1)+x(6_6_6_1)-1
+x(6_6_1_0)+x(6_6_2_0)+x(6_6_3_0)+x(6_6_4_0)+x(6_6_5_0)+x(6_6_6_0)+x(6_7_1_0)+x(6_7_2_0)+x(6_7_3_0)+x(6_7_4_0)+x(6_7_5_0)+x(6_7_6_0)-1
+x(6_6_1_1)+x(6_6_2_1)+x(6_6_3_1)+x(6_6_4_1)+x(6_6_5_1)+x(6_6_6_1)+x(6_7_1_1)+x(6_7_2_1)+x(6_7_3_1)+x(6_7_4_1)+x(6_7_5_1)+x(6_7_6_1)-1
+x(6_7_1_0)+x(6_7_2_0)+x(6_7_3_0)+x(6_7_4_0)+x(6_7_5_0)+x(6_7_6_0)+x(6_8_1_0)+x(6_8_2_0)+x(6_8_3_0)+x(6_8_4_0)+x(6_8_5_0)+x(6_8_6_0)-1
+x(6_7_1_1)+x(6_7_2_1)+x(6_7_3_1)+x(6_7_4_1)+x(6_7_5_1)+x(6_7_6_1)+x(6_8_1_1)+x(6_8_2_1)+x(6_8_3_1)+x(6_8_4_1)+x(6_8_5_1)+x(6_8_6_1)-1
+x(6_8_1_0)+x(6_8_2_0)+x(6_8_3_0)+x(6_8_4_0)+x(6_8_5_0)+x(6_8_6_0)+x(6_9_1_0)+x(6_9_2_0)+x(6_9_3_0)+x(6_9_4_0)+x(6_9_5_0)+x(6_9_6_0)-1
+x(6_8_1_1)+x(6_8_2_1)+x(6_8_3_1)+x(6_8_4_1)+x(6_8_5_1)+x(6_8_6_1)+x(6_9_1_1)+x(6_9_2_1)+x(6_9_3_1)+x(6_9_4_1)+x(6_9_5_1)+x(6_9_6_1)-1
+x(6_9_1_0)+x(6_9_2_0)+x(6_9_3_0)+x(6_9_4_0)+x(6_9_5_0)+x(6_9_6_0)+x(6_10_1_0)+x(6_10_2_0)+x(6_10_3_0)+x(6_10_4_0)+x(6_10_5_0)+x(6_10_6_0)-1
+x(6_9_1_1)+x(6_9_2_1)+x(6_9_3_1)+x(6_9_4_1)+x(6_9_5_1)+x(6_9_6_1)+x(6_10_1_1)+x(6_10_2_1)+x(6_10_3_1)+x(6_10_4_1)+x(6_10_5_1)+x(6_10_6_1)-1
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,01) : 1.0
+x(01,02,06,00) : 1.0
+x(01,03,03,01) : 1.0
+x(01,04,02,00) : 1.0
+x(01,05,06,01) : 1.0
+x(01,06,04,00) : 1.0
+x(01,07,02,01) : 1.0
+x(01,08,04,01) : 1.0
+x(01,09,03,00) : 1.0
+x(01,10,05,00) : 1.0
+x(02,01,06,01) : 1.0
+x(02,02,03,00) : 1.0
+x(02,03,04,00) : 1.0
+x(02,04,01,01) : 1.0
+x(02,05,05,00) : 1.0
+x(02,06,03,01) : 1.0
+x(02,07,01,00) : 1.0
+x(02,08,06,00) : 1.0
+x(02,09,05,01) : 1.0
+x(02,10,04,01) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,02,01) : 1.0
+x(03,03,01,00) : 1.0
+x(03,04,05,01) : 1.0
+x(03,05,04,01) : 1.0
+x(03,06,02,00) : 1.0
+x(03,07,06,01) : 1.0
+x(03,08,05,00) : 1.0
+x(03,09,01,01) : 1.0
+x(03,10,06,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,05,00) : 1.0
+x(04,03,02,01) : 1.0
+x(04,04,06,00) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,01,01) : 1.0
+x(04,07,05,01) : 1.0
+x(04,08,01,00) : 1.0
+x(04,09,06,01) : 1.0
+x(04,10,02,00) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,04,01) : 1.0
+x(05,03,06,01) : 1.0
+x(05,04,03,00) : 1.0
+x(05,05,02,01) : 1.0
+x(05,06,06,00) : 1.0
+x(05,07,04,00) : 1.0
+x(05,08,03,01) : 1.0
+x(05,09,02,00) : 1.0
+x(05,10,01,01) : 1.0
+x(06,01,02,00) : 1.0
+x(06,02,01,01) : 1.0
+x(06,03,05,00) : 1.0
+x(06,04,04,01) : 1.0
+x(06,05,01,00) : 1.0
+x(06,06,05,01) : 1.0
+x(06,07,03,00) : 1.0
+x(06,08,02,01) : 1.0
+x(06,09,04,00) : 1.0
+x(06,10,03,01) : 1.0
+10.0
+[]
+^CTraceback (most recent call last):
+  File "CDTTP2.py", line 255, in <module>
+    
+  File "CDTTP2.py", line 249, in main
+    
+  File "CDTTP2.py", line 235, in display_schedule
+    
+  File "/Users/petite/opt/anaconda3/lib/python3.7/tkinter/__init__.py", line 1283, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(;^ω^) <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,01) : 1.0
+x(01,02,06,00) : 1.0
+x(01,03,03,01) : 1.0
+x(01,04,02,00) : 1.0
+x(01,05,06,01) : 1.0
+x(01,06,04,00) : 1.0
+x(01,07,02,01) : 1.0
+x(01,08,04,01) : 1.0
+x(01,09,03,00) : 1.0
+x(01,10,05,00) : 1.0
+x(02,01,06,01) : 1.0
+x(02,02,03,00) : 1.0
+x(02,03,04,00) : 1.0
+x(02,04,01,01) : 1.0
+x(02,05,05,00) : 1.0
+x(02,06,03,01) : 1.0
+x(02,07,01,00) : 1.0
+x(02,08,06,00) : 1.0
+x(02,09,05,01) : 1.0
+x(02,10,04,01) : 1.0
+x(03,01,04,00) : 1.0
+x(03,02,02,01) : 1.0
+x(03,03,01,00) : 1.0
+x(03,04,05,01) : 1.0
+x(03,05,04,01) : 1.0
+x(03,06,02,00) : 1.0
+x(03,07,06,01) : 1.0
+x(03,08,05,00) : 1.0
+x(03,09,01,01) : 1.0
+x(03,10,06,00) : 1.0
+x(04,01,03,01) : 1.0
+x(04,02,05,00) : 1.0
+x(04,03,02,01) : 1.0
+x(04,04,06,00) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,01,01) : 1.0
+x(04,07,05,01) : 1.0
+x(04,08,01,00) : 1.0
+x(04,09,06,01) : 1.0
+x(04,10,02,00) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,04,01) : 1.0
+x(05,03,06,01) : 1.0
+x(05,04,03,00) : 1.0
+x(05,05,02,01) : 1.0
+x(05,06,06,00) : 1.0
+x(05,07,04,00) : 1.0
+x(05,08,03,01) : 1.0
+x(05,09,02,00) : 1.0
+x(05,10,01,01) : 1.0
+x(06,01,02,00) : 1.0
+x(06,02,01,01) : 1.0
+x(06,03,05,00) : 1.0
+x(06,04,04,01) : 1.0
+x(06,05,01,00) : 1.0
+x(06,06,05,01) : 1.0
+x(06,07,03,00) : 1.0
+x(06,08,02,01) : 1.0
+x(06,09,04,00) : 1.0
+x(06,10,03,01) : 1.0
+10.0
+[]
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,01) : 1.0
+x(01,02,03,00) : 1.0
+x(01,03,02,01) : 1.0
+x(01,04,03,01) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,05,00) : 1.0
+x(01,07,06,01) : 1.0
+x(01,08,04,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,04,00) : 1.0
+x(02,01,03,01) : 1.0
+x(02,02,06,00) : 1.0
+x(02,03,01,00) : 1.0
+x(02,04,06,01) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,03,00) : 1.0
+x(02,07,04,01) : 1.0
+x(02,08,05,01) : 1.0
+x(02,09,04,00) : 1.0
+x(02,10,05,00) : 1.0
+x(03,01,02,00) : 1.0
+x(03,02,01,01) : 1.0
+x(03,03,04,00) : 1.0
+x(03,04,01,00) : 1.0
+x(03,05,04,01) : 1.0
+x(03,06,02,01) : 1.0
+x(03,07,05,00) : 1.0
+x(03,08,06,00) : 1.0
+x(03,09,05,01) : 1.0
+x(03,10,06,01) : 1.0
+x(04,01,06,00) : 1.0
+x(04,02,05,00) : 1.0
+x(04,03,03,01) : 1.0
+x(04,04,05,01) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,06,01) : 1.0
+x(04,07,02,00) : 1.0
+x(04,08,01,00) : 1.0
+x(04,09,02,01) : 1.0
+x(04,10,01,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,04,01) : 1.0
+x(05,03,06,01) : 1.0
+x(05,04,04,00) : 1.0
+x(05,05,06,00) : 1.0
+x(05,06,01,01) : 1.0
+x(05,07,03,01) : 1.0
+x(05,08,02,00) : 1.0
+x(05,09,03,00) : 1.0
+x(05,10,02,01) : 1.0
+x(06,01,04,01) : 1.0
+x(06,02,02,01) : 1.0
+x(06,03,05,00) : 1.0
+x(06,04,02,00) : 1.0
+x(06,05,05,01) : 1.0
+x(06,06,04,00) : 1.0
+x(06,07,01,00) : 1.0
+x(06,08,03,01) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,03,00) : 1.0
+最適値: 24.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,01) : 1.0
+x(01,02,03,00) : 1.0
+x(01,03,02,01) : 1.0
+x(01,04,03,01) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,05,00) : 1.0
+x(01,07,06,01) : 1.0
+x(01,08,04,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,04,00) : 1.0
+x(02,01,03,01) : 1.0
+x(02,02,06,00) : 1.0
+x(02,03,01,00) : 1.0
+x(02,04,06,01) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,03,00) : 1.0
+x(02,07,04,01) : 1.0
+x(02,08,05,01) : 1.0
+x(02,09,04,00) : 1.0
+x(02,10,05,00) : 1.0
+x(03,01,02,00) : 1.0
+x(03,02,01,01) : 1.0
+x(03,03,04,00) : 1.0
+x(03,04,01,00) : 1.0
+x(03,05,04,01) : 1.0
+x(03,06,02,01) : 1.0
+x(03,07,05,00) : 1.0
+x(03,08,06,00) : 1.0
+x(03,09,05,01) : 1.0
+x(03,10,06,01) : 1.0
+x(04,01,06,00) : 1.0
+x(04,02,05,00) : 1.0
+x(04,03,03,01) : 1.0
+x(04,04,05,01) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,06,01) : 1.0
+x(04,07,02,00) : 1.0
+x(04,08,01,00) : 1.0
+x(04,09,02,01) : 1.0
+x(04,10,01,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,04,01) : 1.0
+x(05,03,06,01) : 1.0
+x(05,04,04,00) : 1.0
+x(05,05,06,00) : 1.0
+x(05,06,01,01) : 1.0
+x(05,07,03,01) : 1.0
+x(05,08,02,00) : 1.0
+x(05,09,03,00) : 1.0
+x(05,10,02,01) : 1.0
+x(06,01,04,01) : 1.0
+x(06,02,02,01) : 1.0
+x(06,03,05,00) : 1.0
+x(06,04,02,00) : 1.0
+x(06,05,05,01) : 1.0
+x(06,06,04,00) : 1.0
+x(06,07,01,00) : 1.0
+x(06,08,03,01) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,03,00) : 1.0
+最適値: 24.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+x(01,01,05,01) : 1.0
+x(01,02,03,00) : 1.0
+x(01,03,02,01) : 1.0
+x(01,04,03,01) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,05,00) : 1.0
+x(01,07,06,01) : 1.0
+x(01,08,04,01) : 1.0
+x(01,09,06,00) : 1.0
+x(01,10,04,00) : 1.0
+x(02,01,03,01) : 1.0
+x(02,02,06,00) : 1.0
+x(02,03,01,00) : 1.0
+x(02,04,06,01) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,03,00) : 1.0
+x(02,07,04,01) : 1.0
+x(02,08,05,01) : 1.0
+x(02,09,04,00) : 1.0
+x(02,10,05,00) : 1.0
+x(03,01,02,00) : 1.0
+x(03,02,01,01) : 1.0
+x(03,03,04,00) : 1.0
+x(03,04,01,00) : 1.0
+x(03,05,04,01) : 1.0
+x(03,06,02,01) : 1.0
+x(03,07,05,00) : 1.0
+x(03,08,06,00) : 1.0
+x(03,09,05,01) : 1.0
+x(03,10,06,01) : 1.0
+x(04,01,06,00) : 1.0
+x(04,02,05,00) : 1.0
+x(04,03,03,01) : 1.0
+x(04,04,05,01) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,06,01) : 1.0
+x(04,07,02,00) : 1.0
+x(04,08,01,00) : 1.0
+x(04,09,02,01) : 1.0
+x(04,10,01,01) : 1.0
+x(05,01,01,00) : 1.0
+x(05,02,04,01) : 1.0
+x(05,03,06,01) : 1.0
+x(05,04,04,00) : 1.0
+x(05,05,06,00) : 1.0
+x(05,06,01,01) : 1.0
+x(05,07,03,01) : 1.0
+x(05,08,02,00) : 1.0
+x(05,09,03,00) : 1.0
+x(05,10,02,01) : 1.0
+x(06,01,04,01) : 1.0
+x(06,02,02,01) : 1.0
+x(06,03,05,00) : 1.0
+x(06,04,02,00) : 1.0
+x(06,05,05,01) : 1.0
+x(06,06,04,00) : 1.0
+x(06,07,01,00) : 1.0
+x(06,08,03,01) : 1.0
+x(06,09,01,01) : 1.0
+x(06,10,03,00) : 1.0
+最適値: 24.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+1 12
+1 13
+1 14
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+2 11
+2 12
+2 13
+2 14
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+3 11
+3 12
+3 13
+3 14
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+4 11
+4 12
+4 13
+4 14
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+5 11
+5 12
+5 13
+5 14
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+6 11
+6 12
+6 13
+6 14
+7 1
+7 2
+7 3
+7 4
+7 5
+7 6
+7 7
+7 8
+7 9
+7 10
+7 11
+7 12
+7 13
+7 14
+8 1
+8 2
+8 3
+8 4
+8 5
+8 6
+8 7
+8 8
+8 9
+8 10
+8 11
+8 12
+8 13
+8 14
+x(01,01,02,00) : 1.0
+x(01,02,07,01) : 1
+x(01,03,02,01) : 1
+x(01,04,07,00) : 1
+x(01,05,06,00) : 1
+x(01,06,04,01) : 1
+x(01,07,06,01) : 1
+x(01,08,08,00) : 1
+x(01,09,03,00) : 1.0
+x(01,10,08,01) : 1
+x(01,11,05,01) : 1.0
+x(01,12,04,00) : 1
+x(01,13,05,00) : 1
+x(01,14,03,01) : 1.0
+x(02,01,01,01) : 1.0
+x(02,02,08,01) : 1
+x(02,03,01,00) : 1
+x(02,04,04,00) : 1
+x(02,05,05,01) : 1.0
+x(02,06,03,00) : 1
+x(02,07,08,00) : 1.0
+x(02,08,06,01) : 1.0
+x(02,09,04,01) : 1.0
+x(02,10,07,00) : 1
+x(02,11,03,01) : 1
+x(02,12,07,01) : 1
+x(02,13,06,00) : 1
+x(02,14,05,00) : 1.0
+x(03,01,05,01) : 1.0
+x(03,02,04,01) : 1.0
+x(03,03,05,00) : 1.0
+x(03,04,08,00) : 1.0
+x(03,05,07,01) : 1.0
+x(03,06,02,01) : 1
+x(03,07,04,00) : 1
+x(03,08,07,00) : 1.0
+x(03,09,01,01) : 1.0
+x(03,10,06,01) : 1.0
+x(03,11,02,00) : 1
+x(03,12,06,00) : 1
+x(03,13,08,01) : 1
+x(03,14,01,00) : 1.0
+x(04,01,06,00) : 1.0
+x(04,02,03,00) : 1.0
+x(04,03,08,01) : 1.0
+x(04,04,02,01) : 1
+x(04,05,08,00) : 1
+x(04,06,01,00) : 1
+x(04,07,03,01) : 1
+x(04,08,05,01) : 1.0
+x(04,09,02,00) : 1.0
+x(04,10,05,00) : 1
+x(04,11,07,01) : 1
+x(04,12,01,01) : 1
+x(04,13,07,00) : 1
+x(04,14,06,01) : 1
+x(05,01,03,00) : 1.0
+x(05,02,06,00) : 1
+x(05,03,03,01) : 1.0
+x(05,04,06,01) : 1
+x(05,05,02,00) : 1.0
+x(05,06,08,01) : 1
+x(05,07,07,00) : 1.0
+x(05,08,04,00) : 1.0
+x(05,09,07,01) : 1.0
+x(05,10,04,01) : 1
+x(05,11,01,00) : 1.0
+x(05,12,08,00) : 1.0
+x(05,13,01,01) : 1
+x(05,14,02,01) : 1.0
+x(06,01,04,01) : 1.0
+x(06,02,05,01) : 1
+x(06,03,07,00) : 1.0
+x(06,04,05,00) : 1
+x(06,05,01,01) : 1
+x(06,06,07,01) : 1
+x(06,07,01,00) : 1
+x(06,08,02,00) : 1.0
+x(06,09,08,01) : 1.0
+x(06,10,03,00) : 1.0
+x(06,11,08,00) : 1
+x(06,12,03,01) : 1
+x(06,13,02,01) : 1
+x(06,14,04,00) : 1
+x(07,01,08,00) : 1.0
+x(07,02,01,00) : 1
+x(07,03,06,01) : 1.0
+x(07,04,01,01) : 1
+x(07,05,03,00) : 1.0
+x(07,06,06,00) : 1
+x(07,07,05,01) : 1.0
+x(07,08,03,01) : 1.0
+x(07,09,05,00) : 1.0
+x(07,10,02,01) : 1
+x(07,11,04,00) : 1
+x(07,12,02,00) : 1
+x(07,13,04,01) : 1
+x(07,14,08,01) : 1
+x(08,01,07,01) : 1.0
+x(08,02,02,00) : 1
+x(08,03,04,00) : 1.0
+x(08,04,03,01) : 1.0
+x(08,05,04,01) : 1
+x(08,06,05,00) : 1
+x(08,07,02,01) : 1.0
+x(08,08,01,01) : 1
+x(08,09,06,00) : 1.0
+x(08,10,01,00) : 1
+x(08,11,06,01) : 1
+x(08,12,05,01) : 1.0
+x(08,13,03,00) : 1
+x(08,14,07,00) : 1
+最適値: 47.999999999999964
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+1 12
+1 13
+1 14
+1 15
+1 16
+1 17
+1 18
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+2 11
+2 12
+2 13
+2 14
+2 15
+2 16
+2 17
+2 18
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+3 11
+3 12
+3 13
+3 14
+3 15
+3 16
+3 17
+3 18
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+4 11
+4 12
+4 13
+4 14
+4 15
+4 16
+4 17
+4 18
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+5 11
+5 12
+5 13
+5 14
+5 15
+5 16
+5 17
+5 18
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+6 11
+6 12
+6 13
+6 14
+6 15
+6 16
+6 17
+6 18
+7 1
+7 2
+7 3
+7 4
+7 5
+7 6
+7 7
+7 8
+7 9
+7 10
+7 11
+7 12
+7 13
+7 14
+7 15
+7 16
+7 17
+7 18
+8 1
+8 2
+8 3
+8 4
+8 5
+8 6
+8 7
+8 8
+8 9
+8 10
+8 11
+8 12
+8 13
+8 14
+8 15
+8 16
+8 17
+8 18
+9 1
+9 2
+9 3
+9 4
+9 5
+9 6
+9 7
+9 8
+9 9
+9 10
+9 11
+9 12
+9 13
+9 14
+9 15
+9 16
+9 17
+9 18
+10 1
+10 2
+10 3
+10 4
+10 5
+10 6
+10 7
+10 8
+10 9
+10 10
+10 11
+10 12
+10 13
+10 14
+10 15
+10 16
+10 17
+10 18
+x(01,01,06,00) : 1.0
+x(01,02,09,00) : 1.0
+x(01,03,04,01) : 1.0
+x(01,04,10,00) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,10,01) : 1.0
+x(01,07,02,01) : 1.0
+x(01,08,07,00) : 1.0
+x(01,09,08,00) : 1.0
+x(01,10,06,01) : 1.0
+x(01,11,08,01) : 1.0
+x(01,12,04,00) : 1.0
+x(01,13,05,00) : 1.0
+x(01,14,03,01) : 1.0
+x(01,15,05,01) : 1.0
+x(01,16,03,00) : 1.0
+x(01,17,09,01) : 1.0
+x(01,18,07,01) : 1.0
+x(02,01,04,00) : 1.0
+x(02,02,08,00) : 1.0
+x(02,03,09,01) : 1.0
+x(02,04,05,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,05,01) : 1.0
+x(02,07,01,00) : 1.0
+x(02,08,06,00) : 1.0
+x(02,09,10,01) : 1.0
+x(02,10,03,01) : 1.0
+x(02,11,10,00) : 1.0
+x(02,12,07,00) : 1.0
+x(02,13,04,01) : 1.0
+x(02,14,07,01) : 1.0
+x(02,15,03,00) : 1.0
+x(02,16,09,00) : 1.0
+x(02,17,06,01) : 1.0
+x(02,18,08,01) : 1.0
+x(03,01,09,00) : 1.0
+x(03,02,06,00) : 1.0
+x(03,03,08,01) : 1.0
+x(03,04,04,01) : 1.0
+x(03,05,07,00) : 1.0
+x(03,06,04,00) : 1.0
+x(03,07,07,01) : 1.0
+x(03,08,09,01) : 1.0
+x(03,09,05,00) : 1.0
+x(03,10,02,00) : 1.0
+x(03,11,05,01) : 1.0
+x(03,12,10,01) : 1.0
+x(03,13,08,00) : 1.0
+x(03,14,01,00) : 1.0
+x(03,15,02,01) : 1.0
+x(03,16,01,01) : 1.0
+x(03,17,10,00) : 1.0
+x(03,18,06,01) : 1.0
+x(04,01,02,01) : 1.0
+x(04,02,10,01) : 1.0
+x(04,03,01,00) : 1.0
+x(04,04,03,00) : 1.0
+x(04,05,06,01) : 1.0
+x(04,06,03,01) : 1.0
+x(04,07,06,00) : 1.0
+x(04,08,08,01) : 1.0
+x(04,09,07,00) : 1.0
+x(04,10,09,00) : 1.0
+x(04,11,07,01) : 1.0
+x(04,12,01,01) : 1.0
+x(04,13,02,00) : 1.0
+x(04,14,05,00) : 1.0
+x(04,15,09,01) : 1.0
+x(04,16,05,01) : 1.0
+x(04,17,08,00) : 1.0
+x(04,18,10,00) : 1.0
+x(05,01,08,00) : 1.0
+x(05,02,07,00) : 1.0
+x(05,03,06,01) : 1.0
+x(05,04,02,01) : 1.0
+x(05,05,09,00) : 1.0
+x(05,06,02,00) : 1.0
+x(05,07,08,01) : 1.0
+x(05,08,10,00) : 1.0
+x(05,09,03,01) : 1.0
+x(05,10,10,01) : 1.0
+x(05,11,03,00) : 1.0
+x(05,12,06,00) : 1.0
+x(05,13,01,01) : 1.0
+x(05,14,04,01) : 1.0
+x(05,15,01,00) : 1.0
+x(05,16,04,00) : 1.0
+x(05,17,07,01) : 1.0
+x(05,18,09,01) : 1.0
+x(06,01,01,01) : 1.0
+x(06,02,03,01) : 1.0
+x(06,03,05,00) : 1.0
+x(06,04,08,01) : 1.0
+x(06,05,04,00) : 1.0
+x(06,06,08,00) : 1.0
+x(06,07,04,01) : 1.0
+x(06,08,02,01) : 1.0
+x(06,09,09,00) : 1.0
+x(06,10,01,00) : 1.0
+x(06,11,09,01) : 1.0
+x(06,12,05,01) : 1.0
+x(06,13,07,00) : 1.0
+x(06,14,10,00) : 1.0
+x(06,15,07,01) : 1.0
+x(06,16,10,01) : 1.0
+x(06,17,02,00) : 1.0
+x(06,18,03,00) : 1.0
+x(07,01,10,01) : 1.0
+x(07,02,05,01) : 1.0
+x(07,03,10,00) : 1.0
+x(07,04,09,01) : 1.0
+x(07,05,03,01) : 1.0
+x(07,06,09,00) : 1.0
+x(07,07,03,00) : 1.0
+x(07,08,01,01) : 1.0
+x(07,09,04,01) : 1.0
+x(07,10,08,00) : 1.0
+x(07,11,04,00) : 1.0
+x(07,12,02,01) : 1.0
+x(07,13,06,01) : 1.0
+x(07,14,02,00) : 1.0
+x(07,15,06,00) : 1.0
+x(07,16,08,01) : 1.0
+x(07,17,05,00) : 1.0
+x(07,18,01,00) : 1.0
+x(08,01,05,01) : 1.0
+x(08,02,02,01) : 1.0
+x(08,03,03,00) : 1.0
+x(08,04,06,00) : 1.0
+x(08,05,10,01) : 1.0
+x(08,06,06,01) : 1.0
+x(08,07,05,00) : 1.0
+x(08,08,04,00) : 1.0
+x(08,09,01,01) : 1.0
+x(08,10,07,01) : 1.0
+x(08,11,01,00) : 1.0
+x(08,12,09,00) : 1.0
+x(08,13,03,01) : 1.0
+x(08,14,09,01) : 1.0
+x(08,15,10,00) : 1.0
+x(08,16,07,00) : 1.0
+x(08,17,04,01) : 1.0
+x(08,18,02,00) : 1.0
+x(09,01,03,01) : 1.0
+x(09,02,01,01) : 1.0
+x(09,03,02,00) : 1.0
+x(09,04,07,00) : 1.0
+x(09,05,05,01) : 1.0
+x(09,06,07,01) : 1.0
+x(09,07,10,00) : 1.0
+x(09,08,03,00) : 1.0
+x(09,09,06,01) : 1.0
+x(09,10,04,01) : 1.0
+x(09,11,06,00) : 1.0
+x(09,12,08,01) : 1.0
+x(09,13,10,01) : 1.0
+x(09,14,08,00) : 1.0
+x(09,15,04,00) : 1.0
+x(09,16,02,01) : 1.0
+x(09,17,01,00) : 1.0
+x(09,18,05,00) : 1.0
+x(10,01,07,00) : 1.0
+x(10,02,04,00) : 1.0
+x(10,03,07,01) : 1.0
+x(10,04,01,01) : 1.0
+x(10,05,08,00) : 1.0
+x(10,06,01,00) : 1.0
+x(10,07,09,01) : 1.0
+x(10,08,05,01) : 1.0
+x(10,09,02,00) : 1.0
+x(10,10,05,00) : 1.0
+x(10,11,02,01) : 1.0
+x(10,12,03,00) : 1.0
+x(10,13,09,00) : 1.0
+x(10,14,06,01) : 1.0
+x(10,15,08,01) : 1.0
+x(10,16,06,00) : 1.0
+x(10,17,03,01) : 1.0
+x(10,18,04,01) : 1.0
+最適値: 80.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 11
+1 12
+1 13
+1 14
+1 15
+1 16
+1 17
+1 18
+1 19
+1 20
+1 21
+1 22
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+2 10
+2 11
+2 12
+2 13
+2 14
+2 15
+2 16
+2 17
+2 18
+2 19
+2 20
+2 21
+2 22
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+3 7
+3 8
+3 9
+3 10
+3 11
+3 12
+3 13
+3 14
+3 15
+3 16
+3 17
+3 18
+3 19
+3 20
+3 21
+3 22
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+4 10
+4 11
+4 12
+4 13
+4 14
+4 15
+4 16
+4 17
+4 18
+4 19
+4 20
+4 21
+4 22
+5 1
+5 2
+5 3
+5 4
+5 5
+5 6
+5 7
+5 8
+5 9
+5 10
+5 11
+5 12
+5 13
+5 14
+5 15
+5 16
+5 17
+5 18
+5 19
+5 20
+5 21
+5 22
+6 1
+6 2
+6 3
+6 4
+6 5
+6 6
+6 7
+6 8
+6 9
+6 10
+6 11
+6 12
+6 13
+6 14
+6 15
+6 16
+6 17
+6 18
+6 19
+6 20
+6 21
+6 22
+7 1
+7 2
+7 3
+7 4
+7 5
+7 6
+7 7
+7 8
+7 9
+7 10
+7 11
+7 12
+7 13
+7 14
+7 15
+7 16
+7 17
+7 18
+7 19
+7 20
+7 21
+7 22
+8 1
+8 2
+8 3
+8 4
+8 5
+8 6
+8 7
+8 8
+8 9
+8 10
+8 11
+8 12
+8 13
+8 14
+8 15
+8 16
+8 17
+8 18
+8 19
+8 20
+8 21
+8 22
+9 1
+9 2
+9 3
+9 4
+9 5
+9 6
+9 7
+9 8
+9 9
+9 10
+9 11
+9 12
+9 13
+9 14
+9 15
+9 16
+9 17
+9 18
+9 19
+9 20
+9 21
+9 22
+10 1
+10 2
+10 3
+10 4
+10 5
+10 6
+10 7
+10 8
+10 9
+10 10
+10 11
+10 12
+10 13
+10 14
+10 15
+10 16
+10 17
+10 18
+10 19
+10 20
+10 21
+10 22
+11 1
+11 2
+11 3
+11 4
+11 5
+11 6
+11 7
+11 8
+11 9
+11 10
+11 11
+11 12
+11 13
+11 14
+11 15
+11 16
+11 17
+11 18
+11 19
+11 20
+11 21
+11 22
+12 1
+12 2
+12 3
+12 4
+12 5
+12 6
+12 7
+12 8
+12 9
+12 10
+12 11
+12 12
+12 13
+12 14
+12 15
+12 16
+12 17
+12 18
+12 19
+12 20
+12 21
+12 22
+x(01,01,05,00) : 1.0
+x(01,02,06,00) : 1.0
+x(01,03,07,01) : 1
+x(01,04,05,01) : 1
+x(01,05,08,00) : 1
+x(01,06,11,00) : 1.0
+x(01,07,12,01) : 1
+x(01,08,02,01) : 1
+x(01,09,03,00) : 1.0
+x(01,10,09,00) : 1
+x(01,11,11,01) : 1
+x(01,12,09,01) : 1
+x(01,13,07,00) : 1.0
+x(01,14,02,00) : 1
+x(01,15,06,01) : 1.0
+x(01,16,04,01) : 1
+x(01,17,12,00) : 1
+x(01,18,10,00) : 1.0
+x(01,19,03,01) : 1
+x(01,20,10,01) : 1.0
+x(01,21,04,00) : 1.0
+x(01,22,08,01) : 1.0
+x(02,01,03,00) : 1.0
+x(02,02,09,01) : 1.0
+x(02,03,08,01) : 1
+x(02,04,04,00) : 1
+x(02,05,05,00) : 1.0
+x(02,06,04,01) : 1
+x(02,07,03,01) : 1.0
+x(02,08,01,00) : 1
+x(02,09,11,00) : 1.0
+x(02,10,10,01) : 1.0
+x(02,11,05,01) : 1
+x(02,12,08,00) : 1
+x(02,13,12,00) : 1.0
+x(02,14,01,01) : 1
+x(02,15,12,01) : 1.0
+x(02,16,10,00) : 1.0
+x(02,17,09,00) : 1
+x(02,18,11,01) : 1
+x(02,19,06,01) : 1.0
+x(02,20,07,00) : 1.0
+x(02,21,06,00) : 1
+x(02,22,07,01) : 1.0
+x(03,01,02,01) : 1.0
+x(03,02,07,00) : 1
+x(03,03,04,00) : 1.0
+x(03,04,11,01) : 1
+x(03,05,06,01) : 1.0
+x(03,06,12,00) : 1
+x(03,07,02,00) : 1.0
+x(03,08,05,01) : 1
+x(03,09,01,01) : 1.0
+x(03,10,11,00) : 1
+x(03,11,06,00) : 1
+x(03,12,04,01) : 1
+x(03,13,10,01) : 1.0
+x(03,14,05,00) : 1
+x(03,15,08,00) : 1
+x(03,16,12,01) : 1.0
+x(03,17,08,01) : 1.0
+x(03,18,09,00) : 1
+x(03,19,01,00) : 1
+x(03,20,09,01) : 1
+x(03,21,07,01) : 1
+x(03,22,10,00) : 1.0
+x(04,01,08,00) : 1.0
+x(04,02,05,00) : 1
+x(04,03,03,01) : 1.0
+x(04,04,02,01) : 1
+x(04,05,12,00) : 1.0
+x(04,06,02,00) : 1
+x(04,07,05,01) : 1
+x(04,08,06,01) : 1.0
+x(04,09,07,00) : 1.0
+x(04,10,06,00) : 1.0
+x(04,11,12,01) : 1.0
+x(04,12,03,00) : 1
+x(04,13,09,00) : 1
+x(04,14,08,01) : 1
+x(04,15,09,01) : 1
+x(04,16,01,00) : 1
+x(04,17,10,01) : 1
+x(04,18,07,01) : 1.0
+x(04,19,10,00) : 1.0
+x(04,20,11,00) : 1
+x(04,21,01,01) : 1.0
+x(04,22,11,01) : 1.0
+x(05,01,01,01) : 1.0
+x(05,02,04,01) : 1
+x(05,03,09,00) : 1
+x(05,04,01,00) : 1
+x(05,05,02,01) : 1.0
+x(05,06,10,01) : 1.0
+x(05,07,04,00) : 1
+x(05,08,03,00) : 1
+x(05,09,09,01) : 1.0
+x(05,10,07,01) : 1
+x(05,11,02,00) : 1
+x(05,12,11,00) : 1
+x(05,13,06,01) : 1
+x(05,14,03,01) : 1
+x(05,15,10,00) : 1
+x(05,16,08,00) : 1.0
+x(05,17,11,01) : 1
+x(05,18,12,01) : 1.0
+x(05,19,07,00) : 1
+x(05,20,12,00) : 1.0
+x(05,21,08,01) : 1
+x(05,22,06,00) : 1.0
+x(06,01,07,00) : 1.0
+x(06,02,01,01) : 1.0
+x(06,03,12,01) : 1
+x(06,04,09,00) : 1
+x(06,05,03,00) : 1.0
+x(06,06,09,01) : 1.0
+x(06,07,11,01) : 1
+x(06,08,04,00) : 1.0
+x(06,09,12,00) : 1.0
+x(06,10,04,01) : 1.0
+x(06,11,03,01) : 1
+x(06,12,10,00) : 1
+x(06,13,05,00) : 1
+x(06,14,10,01) : 1
+x(06,15,01,00) : 1.0
+x(06,16,11,00) : 1
+x(06,17,07,01) : 1
+x(06,18,08,01) : 1
+x(06,19,02,00) : 1.0
+x(06,20,08,00) : 1
+x(06,21,02,01) : 1
+x(06,22,05,01) : 1.0
+x(07,01,06,01) : 1.0
+x(07,02,03,01) : 1
+x(07,03,01,00) : 1
+x(07,04,08,00) : 1
+x(07,05,10,01) : 1
+x(07,06,08,01) : 1
+x(07,07,10,00) : 1.0
+x(07,08,11,01) : 1.0
+x(07,09,04,01) : 1.0
+x(07,10,05,00) : 1
+x(07,11,09,00) : 1.0
+x(07,12,12,01) : 1.0
+x(07,13,01,01) : 1.0
+x(07,14,12,00) : 1.0
+x(07,15,11,00) : 1
+x(07,16,09,01) : 1.0
+x(07,17,06,00) : 1
+x(07,18,04,00) : 1.0
+x(07,19,05,01) : 1
+x(07,20,02,01) : 1.0
+x(07,21,03,00) : 1
+x(07,22,02,00) : 1.0
+x(08,01,04,01) : 1.0
+x(08,02,11,00) : 1
+x(08,03,02,00) : 1
+x(08,04,07,01) : 1
+x(08,05,01,01) : 1
+x(08,06,07,00) : 1
+x(08,07,09,00) : 1
+x(08,08,12,01) : 1
+x(08,09,10,01) : 1
+x(08,10,12,00) : 1
+x(08,11,10,00) : 1
+x(08,12,02,01) : 1
+x(08,13,11,01) : 1
+x(08,14,04,00) : 1
+x(08,15,03,01) : 1
+x(08,16,05,01) : 1.0
+x(08,17,03,00) : 1.0
+x(08,18,06,00) : 1
+x(08,19,09,01) : 1
+x(08,20,06,01) : 1
+x(08,21,05,00) : 1
+x(08,22,01,00) : 1.0
+x(09,01,12,00) : 1.0
+x(09,02,02,00) : 1.0
+x(09,03,05,01) : 1
+x(09,04,06,01) : 1
+x(09,05,11,00) : 1
+x(09,06,06,00) : 1.0
+x(09,07,08,01) : 1
+x(09,08,10,00) : 1
+x(09,09,05,00) : 1.0
+x(09,10,01,01) : 1
+x(09,11,07,01) : 1.0
+x(09,12,01,00) : 1
+x(09,13,04,01) : 1
+x(09,14,11,01) : 1
+x(09,15,04,00) : 1
+x(09,16,07,00) : 1.0
+x(09,17,02,01) : 1
+x(09,18,03,01) : 1
+x(09,19,08,00) : 1
+x(09,20,03,00) : 1
+x(09,21,10,01) : 1.0
+x(09,22,12,01) : 1.0
+x(10,01,11,00) : 1.0
+x(10,02,12,00) : 1
+x(10,03,11,01) : 1
+x(10,04,12,01) : 1
+x(10,05,07,00) : 1
+x(10,06,05,00) : 1.0
+x(10,07,07,01) : 1.0
+x(10,08,09,01) : 1
+x(10,09,08,00) : 1
+x(10,10,02,00) : 1.0
+x(10,11,08,01) : 1
+x(10,12,06,01) : 1
+x(10,13,03,00) : 1.0
+x(10,14,06,00) : 1
+x(10,15,05,01) : 1
+x(10,16,02,01) : 1.0
+x(10,17,04,00) : 1
+x(10,18,01,01) : 1.0
+x(10,19,04,01) : 1.0
+x(10,20,01,00) : 1.0
+x(10,21,09,00) : 1.0
+x(10,22,03,01) : 1.0
+x(11,01,10,01) : 1.0
+x(11,02,08,01) : 1
+x(11,03,10,00) : 1
+x(11,04,03,00) : 1
+x(11,05,09,01) : 1
+x(11,06,01,01) : 1.0
+x(11,07,06,00) : 1
+x(11,08,07,00) : 1.0
+x(11,09,02,01) : 1.0
+x(11,10,03,01) : 1
+x(11,11,01,00) : 1
+x(11,12,05,01) : 1
+x(11,13,08,00) : 1
+x(11,14,09,00) : 1
+x(11,15,07,01) : 1
+x(11,16,06,01) : 1
+x(11,17,05,00) : 1
+x(11,18,02,00) : 1
+x(11,19,12,01) : 1
+x(11,20,04,01) : 1
+x(11,21,12,00) : 1
+x(11,22,04,00) : 1.0
+x(12,01,09,01) : 1.0
+x(12,02,10,01) : 1
+x(12,03,06,00) : 1
+x(12,04,10,00) : 1
+x(12,05,04,01) : 1.0
+x(12,06,03,01) : 1
+x(12,07,01,00) : 1
+x(12,08,08,00) : 1
+x(12,09,06,01) : 1.0
+x(12,10,08,01) : 1
+x(12,11,04,00) : 1.0
+x(12,12,07,00) : 1.0
+x(12,13,02,01) : 1.0
+x(12,14,07,01) : 1.0
+x(12,15,02,00) : 1.0
+x(12,16,03,00) : 1.0
+x(12,17,01,01) : 1
+x(12,18,05,00) : 1.0
+x(12,19,11,00) : 1
+x(12,20,05,01) : 1.0
+x(12,21,11,01) : 1
+x(12,22,09,00) : 1.0
+最適値: 119.99999999999996
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+1 1
+1 2
+1 3
+1 4
+1 5
+1 6
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+3 1
+3 2
+3 3
+3 4
+3 5
+3 6
+4 1
+4 2
+4 3
+4 4
+4 5
+4 6
+x(01,01,04,00) : 1.0
+x(01,02,03,00) : 1.0
+x(01,03,02,01) : 1.0
+x(01,04,03,01) : 1.0
+x(01,05,02,00) : 1.0
+x(01,06,04,01) : 1.0
+x(02,01,03,00) : 1.0
+x(02,02,04,01) : 1.0
+x(02,03,01,00) : 1.0
+x(02,04,04,00) : 1.0
+x(02,05,01,01) : 1.0
+x(02,06,03,01) : 1.0
+x(03,01,02,01) : 1.0
+x(03,02,01,01) : 1.0
+x(03,03,04,00) : 1.0
+x(03,04,01,00) : 1.0
+x(03,05,04,01) : 1.0
+x(03,06,02,00) : 1.0
+x(04,01,01,01) : 1.0
+x(04,02,02,00) : 1.0
+x(04,03,03,01) : 1.0
+x(04,04,02,01) : 1.0
+x(04,05,03,00) : 1.0
+x(04,06,01,00) : 1.0
+最適値: 8.0
+
+McDonaldsPro ~/Documents/University/lab/Scheduling/CDTTP_solver
+
+(๑˃̵ᴗ˂̵)ﻭ <  python CDTTP2.py
+
