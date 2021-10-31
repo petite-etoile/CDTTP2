@@ -236,7 +236,7 @@ class SchedulingModel:
 
 def main():
     
-    n = 14
+    n = 16
     
     SM = SchedulingModel(n)
     SM.solve()
