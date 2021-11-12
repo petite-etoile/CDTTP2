@@ -2,6 +2,7 @@ from docplex.mp import model
 
 import tkinter as tk
 from tkinter import ttk
+from time import time
 
 class TreeView(ttk.Frame): 
     def __init__(self, master):
@@ -57,6 +58,10 @@ class SchedulingModel:
         self.add_constraints4()
         self.add_constraints5()
         self.add_constraints6()
+        # self.add_constraints7()
+        self.add_constraints8()
+        # self.M.add_constraint(self.M.vars[1,1,2,1] == 1) 
+
 
         #目的関数値
         obj_expr = self.get_obj_expr()
@@ -198,9 +203,24 @@ class SchedulingModel:
                     self.M.upper_of_z = self.get_expr_upper_of_z(i, r, ha)
                     self.M.add_constraint( self.M.vars[-i,-r,-ha] >= self.M.upper_of_z )
 
+    #break数はn^2 - 2n
+    def add_constraints7(self):
+        self.M.break_num = self.get_obj_expr()
+        self.M.add_constraint(self.M.break_num >= self.n ** 2 - self.n*2 - 0.5)
+
+    # 前半のチームの最初のラウンド, Away Game
+    def add_constraints8(self):
+        for i in self.teams:
+            if(i&1):
+                j=i+1
+                self.M.add_constraint(self.M.vars[i,1,j,1] == 1) 
+                
 
     def print_solution_value(self, i, r, j, ha):
         print("x({:0>2},{:0>2},{:0>2},{:0>2}) : {}".format(i,r,j,ha,self.M.vars[i,r,j,ha].solution_value))
+
+    def print_solution_z_value(self, i, r, ha):
+        print("z({:0>2},{:0>2},{:0>2}) : {}".format(i,r,ha,self.M.vars[-i,-r,-ha].solution_value))
 
     def print_solution_values(self):
         for i in self.teams:
@@ -210,6 +230,20 @@ class SchedulingModel:
                         value = self.M.vars[i,r,j,ha].solution_value
                         if(value):
                             self.print_solution_value(i, r, j, ha)
+        for i in self.teams:
+            for r in self.rounds[:-1]:
+                for ha in self.HomeAway:
+                    value = self.M.vars[-i,-r,-ha].solution_value
+                    if(value):
+                        self.print_solution_z_value(i, r, ha)
+
+    def print_objective_value(self):
+        obj_value = 0
+        for i in self.teams:
+            for r in self.rounds[:-1]:
+                for ha in self.HomeAway:
+                    obj_value += self.M.vars[-i,-r,-ha].solution_value
+        print("最適値:{}".format(obj_value))
 
     def represent_schdule(self):
         for i in self.teams:
@@ -218,7 +252,6 @@ class SchedulingModel:
                     for ha in self.HomeAway:
                         value = self.M.vars[i,r,j,ha].solution_value
                         if(value):
-                            print(i,r)
                             self.schedule[i-1][r-1] = "{}{}".format("@" if ha else " ", j)
 
     def display_schedule(self):
@@ -236,13 +269,18 @@ class SchedulingModel:
 
 def main():
     
-    n = 4
+    n = 10
+
+
     
     SM = SchedulingModel(n)
+    start = time()
     SM.solve()
+    end = time()
     SM.print_solution_values()
-    print("最適値:",SM.M.objective_value)
+    SM.print_objective_value()
 
+    print(end - start,"秒")
 
     # SM.display_schedule()
 
