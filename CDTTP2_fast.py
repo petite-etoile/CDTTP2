@@ -1,6 +1,7 @@
 from docplex.mp import model 
 import os
 import re
+import sys
 
 # import tkinter as tk
 # from tkinter import ttk
@@ -286,7 +287,8 @@ class SchedulingModel:
 
 def main():
     
-    n = 4
+    n = int(sys.argv[1])
+
     year, month, date, hour, minute, second, *_ = re.split("[ .:-]", str(datetime.now()))
     output_file = "result/n{:0>2}_{:0>4}年{:0>2}月{:0>2}日{:0>2}時{:0>2}分{:0>2}秒.text".format(n, year, month, date, hour, minute, second)
     f = open(output_file, "a")
