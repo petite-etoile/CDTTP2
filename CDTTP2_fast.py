@@ -1,8 +1,11 @@
 from docplex.mp import model 
+import os
 
 import tkinter as tk
 from tkinter import ttk
 from time import time
+
+from datetime import datetime
 
 class TreeView(ttk.Frame): 
     def __init__(self, master):
@@ -34,14 +37,15 @@ class TreeView(ttk.Frame):
 
 
 class SchedulingModel:
-    def __init__(self, n:int):
+    def __init__(self, n:int, f):
         self.n = n
         self.build(n)
         self.schedule = [ ["#"]*(2*(self.n-1)) for _ in range(self.n) ]
+        self.f = f
 
     def build(self, n:int):
         self.M = model.Model()
-        self.M.context.cplex_parameters.threads = 6
+        self.M.context.cplex_parameters.threads = os.cpu_count()
 
         self.teams = range(1, n+1)
         self.rounds = range(1, 2*(n-1)+1)
@@ -219,8 +223,15 @@ class SchedulingModel:
     def print_solution_value(self, i, r, j, ha):
         print("x({:0>2},{:0>2},{:0>2},{:0>2}) : {}".format(i,r,j,ha,self.M.vars[i,r,j,ha].solution_value))
 
+    def fprint_solution_value(self, i, r, j, ha):
+        self.f.write("x({:0>2},{:0>2},{:0>2},{:0>2}) : {}\n".format(i,r,j,ha,self.M.vars[i,r,j,ha].solution_value))
+
     def print_solution_z_value(self, i, r, ha):
         print("z({:0>2},{:0>2},{:0>2}) : {}".format(i,r,ha,self.M.vars[-i,-r,-ha].solution_value))
+
+    def fprint_solution_z_value(self, i, r, ha):
+        self.f.write("z({:0>2},{:0>2},{:0>2}) : {}\n".format(i,r,ha,self.M.vars[-i,-r,-ha].solution_value))
+
 
     def print_solution_values(self):
         for i in self.teams:
@@ -230,12 +241,14 @@ class SchedulingModel:
                         value = self.M.vars[i,r,j,ha].solution_value
                         if(value):
                             self.print_solution_value(i, r, j, ha)
+                            self.fprint_solution_value(i, r, j, ha)
         for i in self.teams:
             for r in self.rounds[:-1]:
                 for ha in self.HomeAway:
                     value = self.M.vars[-i,-r,-ha].solution_value
                     if(value):
                         self.print_solution_z_value(i, r, ha)
+                        self.fprint_solution_z_value(i, r, ha)
 
     def print_objective_value(self):
         obj_value = 0
@@ -244,6 +257,9 @@ class SchedulingModel:
                 for ha in self.HomeAway:
                     obj_value += self.M.vars[-i,-r,-ha].solution_value
         print("最適値:{}".format(obj_value))
+        self.f.write("最適値:{}\n".format(obj_value))
+    
+        
 
     def represent_schdule(self):
         for i in self.teams:
@@ -269,11 +285,12 @@ class SchedulingModel:
 
 def main():
     
-    n = 10
+    n = 4
 
+    output_file = "result/n={}_{}.text".format(n, str(datetime.now()).replace(" ", "-"))
+    f = open(output_file, "a")
 
-    
-    SM = SchedulingModel(n)
+    SM = SchedulingModel(n, f)
     start = time()
     SM.solve()
     end = time()
@@ -284,6 +301,8 @@ def main():
 
     # SM.display_schedule()
 
+
+    f.close()
 
 
 
