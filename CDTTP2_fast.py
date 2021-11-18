@@ -1,39 +1,40 @@
 from docplex.mp import model 
 import os
+import re
 
-import tkinter as tk
-from tkinter import ttk
+# import tkinter as tk
+# from tkinter import ttk
 from time import time
 
 from datetime import datetime
 
-class TreeView(ttk.Frame): 
-    def __init__(self, master):
-        super().__init__(master, height = 900)
-        self.pack(anchor = tk.CENTER)
+# class TreeView(ttk.Frame): 
+#     def __init__(self, master):
+#         super().__init__(master, height = 900)
+#         self.pack(anchor = tk.CENTER)
 
-    def create_widgets(self, columns, datas):
-        self.tree = ttk.Treeview(self, columns = columns, height = 900)
-        self.tree.pack(anchor = tk.CENTER)
+#     def create_widgets(self, columns, datas):
+#         self.tree = ttk.Treeview(self, columns = columns, height = 900)
+#         self.tree.pack(anchor = tk.CENTER)
         
-        # self.tree.heading("#0")
+#         # self.tree.heading("#0")
 
-        self.tree.column("#0", anchor = tk.CENTER, width = 50)
+#         self.tree.column("#0", anchor = tk.CENTER, width = 50)
 
-        self.set_columns(columns)
-        self.set_datas(datas)
+#         self.set_columns(columns)
+#         self.set_datas(datas)
 
-    def set_columns(self, columns):
-        for col in columns:
-            self.tree.heading(col, text=col)
-            self.tree.column(col, anchor = tk.CENTER, width = 40)
+#     def set_columns(self, columns):
+#         for col in columns:
+#             self.tree.heading(col, text=col)
+#             self.tree.column(col, anchor = tk.CENTER, width = 40)
 
-    def set_row(self, index = "", row_data = []):
-        self.tree.insert("", index = "end", text = index, values = row_data)
+#     def set_row(self, index = "", row_data = []):
+#         self.tree.insert("", index = "end", text = index, values = row_data)
 
-    def set_datas(self, datas):
-        for i,data in enumerate(datas, start = 1):
-            self.set_row(i, data)
+#     def set_datas(self, datas):
+#         for i,data in enumerate(datas, start = 1):
+#             self.set_row(i, data)
 
 
 class SchedulingModel:
@@ -270,24 +271,24 @@ class SchedulingModel:
                         if(value):
                             self.schedule[i-1][r-1] = "{}{}".format("@" if ha else " ", j)
 
-    def display_schedule(self):
-        root = tk.Tk()
-        root.title("CDTTP(2) n={} break数:{}".format(self.n, self.M.objective_value))
+    # def display_schedule(self):
+    #     root = tk.Tk()
+    #     root.title("CDTTP(2) n={} break数:{}".format(self.n, self.M.objective_value))
 
-        root.geometry("2400x900+100+100")
-        table = TreeView( root )
+    #     root.geometry("2400x900+100+100")
+    #     table = TreeView( root )
 
-        columns = [i for i in range(1, (2 * (self.n - 1)) + 1)]
+    #     columns = [i for i in range(1, (2 * (self.n - 1)) + 1)]
 
-        table.create_widgets(columns, self.schedule)
-        root.mainloop()
+    #     table.create_widgets(columns, self.schedule)
+    #     root.mainloop()
 
 
 def main():
     
     n = 4
-
-    output_file = "result/n={}_{}.text".format(n, str(datetime.now()).replace(" ", "-"))
+    year, month, date, hour, minute, second, *_ = re.split("[ .:-]", str(datetime.now()))
+    output_file = "result/n{:0>2}_{:0>4}年{:0>2}月{:0>2}日{:0>2}時{:0>2}分{:0>2}秒.text".format(n, year, month, date, hour, minute, second)
     f = open(output_file, "a")
 
     SM = SchedulingModel(n, f)
@@ -298,6 +299,7 @@ def main():
     SM.print_objective_value()
 
     print(end - start,"秒")
+    f.write("{}秒\n".format(end - start))
 
     # SM.display_schedule()
 
