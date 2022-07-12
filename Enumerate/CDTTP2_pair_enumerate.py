@@ -8,7 +8,7 @@ from time import time
 from datetime import datetime
 
 sys.path.append(os.pardir)
-from sub import generate_solution_pool
+from sub import generate_solution_pool, output_all_schedules
 from Model import CDTTP2_pair_Model 
 
 
@@ -17,17 +17,20 @@ def main():
     n = int(sys.argv[1])
 
     year, month, date, hour, minute, second, *_ = re.split("[ .:-]", str(datetime.now()))
-    output_file = "default_result_all/n{:0>2}_{:0>4}年{:0>2}月{:0>2}日{:0>2}時{:0>2}分{:0>2}秒.text".format(n, year, month, date, hour, minute, second)
+    output_file = "default_result_all/n{:0>2}.text".format(n)
     f = open(output_file, "w")
 
     mdl = CDTTP2_pair_Model.Model(n, f)
     start = time()
-    generate_solution_pool.generate(mdl.Model)
-    end = time()
-    print(end - start,"秒")
-    # f.write("{}秒\n".format(end - start))
+    
+    sol_pool = generate_solution_pool.generate(mdl.Model)
 
-    # mdl.output_schdule(end-start)
+    end = time()
+    f.write("{}秒\n".format(end - start))
+    print(end - start,"秒")
+
+    output_all_schedules.output_all_schedules(mdl.Model, sol_pool, n, f)
+
 
     f.close()
 

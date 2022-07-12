@@ -29,5 +29,11 @@ def generate(mdl):
             if (x_i[k]!=0):
                 sol.add_var_value(vk, x_i[k])
         sol_pool.append(sol)
-        print(objval_i)
     return sol_pool
+
+
+# def get_schedule(mdl, values):
+#     nb_vars = mdl.number_of_variables
+#     schedule = []
+
+#     for 
