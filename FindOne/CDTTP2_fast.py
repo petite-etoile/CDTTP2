@@ -8,34 +8,7 @@ import sys
 from time import time
 
 from datetime import datetime
-
-# class TreeView(ttk.Frame): 
-#     def __init__(self, master):
-#         super().__init__(master, height = 900)
-#         self.pack(anchor = tk.CENTER)
-
-#     def create_widgets(self, columns, datas):
-#         self.tree = ttk.Treeview(self, columns = columns, height = 900)
-#         self.tree.pack(anchor = tk.CENTER)
-        
-#         # self.tree.heading("#0")
-
-#         self.tree.column("#0", anchor = tk.CENTER, width = 50)
-
-#         self.set_columns(columns)
-#         self.set_datas(datas)
-
-#     def set_columns(self, columns):
-#         for col in columns:
-#             self.tree.heading(col, text=col)
-#             self.tree.column(col, anchor = tk.CENTER, width = 40)
-
-#     def set_row(self, index = "", row_data = []):
-#         self.tree.insert("", index = "end", text = index, values = row_data)
-
-#     def set_datas(self, datas):
-#         for i,data in enumerate(datas, start = 1):
-#             self.set_row(i, data)
+from cplex.exceptions import CplexError, CplexSolverError
 
 
 class SchedulingModel:
@@ -64,7 +37,7 @@ class SchedulingModel:
         self.add_constraints4()
         self.add_constraints5()
         self.add_constraints6()
-        # self.add_constraints7()
+        self.add_constraints7()
         self.add_constraints8()
         # self.M.add_constraint(self.M.vars[1,1,2,1] == 1) 
 
@@ -84,7 +57,11 @@ class SchedulingModel:
         return expr
         
     def solve(self):
-        self.M.solve()
+        try:
+            self.M.solve()
+        except CplexSolverError: 
+            print("A")
+            
 
         self.represent_schdule()
 
@@ -212,7 +189,7 @@ class SchedulingModel:
     #break数はn^2 - 2n
     def add_constraints7(self):
         self.M.break_num = self.get_obj_expr()
-        self.M.add_constraint(self.M.break_num >= self.n ** 2 - self.n*2 - 0.5)
+        self.M.add_constraint(self.M.break_num >= self.n ** 2 - self.n*2 - 1)
 
     # 前半のチームの最初のラウンド, Away Game
     def add_constraints8(self):
@@ -294,8 +271,13 @@ def main():
     f = open(output_file, "a")
 
     SM = SchedulingModel(n, f)
-    start = time()
-    SM.solve()
+    try:
+        start = time()
+        SM.solve()
+    except Exception as e:
+        f.write("error!"+str(e))
+        
+
     end = time()
     SM.print_solution_values()
     SM.print_objective_value()
