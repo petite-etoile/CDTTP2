@@ -1,7 +1,8 @@
 import re
 def output_all_schedules(mdl, sol_pool, team_num, f):
-    for sol in sol_pool:
+    for idx, sol in enumerate(sol_pool, start=1):
         schedule = get_schedule(mdl, sol, team_num)
+        f.write("{:0>2}".format(idx) + "-"*20 + "\n")
         write_schedule(schedule, f)
 
 def get_schedule(mdl, sol, team_num):
@@ -16,19 +17,18 @@ def get_schedule(mdl, sol, team_num):
             continue
 
         i,r,j,ha = parse(str(var))
-        schedule[i-1][r-1] = " {:2>}".format(j) if ha == 0 else "@{:2>}".format(j)
+        schedule[i-1][r-1] = "{:>3}".format(j) if ha == 0 else "{:>3}".format("@" + str(j))
         
-    # for key, val in sol.get_value_dict():
+    # for key, val in sol.get_value_dict(cat ):
     #     print(key,val)
     return schedule
 
 def write_schedule(schedule, f):
-    f.write("-"*20 + "\n")
     print("-"*20)
     for row in schedule:
         f.write(" ".join(row))
         f.write("\n")
-        print(*row)
+        print(*row, sep=" ")
     
 
 def parse(line):
