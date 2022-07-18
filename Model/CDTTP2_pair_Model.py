@@ -28,7 +28,7 @@ class Model:
         self.add_constraints4()
         self.add_constraints5()
         self.add_constraints6()
-        # self.add_constraints7()
+        self.add_constraints7()
         self.add_constraints8()
         self.add_constraints9()
         # self.Model.add_constraint(self.Model.vars[1,1,2,1] == 1) 
@@ -177,7 +177,7 @@ class Model:
     #break数はn^2 - 2n
     def add_constraints7(self):
         self.Model.break_num = self.get_obj_expr()
-        self.Model.add_constraint(self.Model.break_num >= self.n ** 2 - self.n*2 - 0.5)
+        self.Model.add_constraint(self.Model.break_num >= self.n ** 2 - self.n*2 - 1)
 
     # 前半のチームの最初のラウンド, Away Game
     def add_constraints8(self):
