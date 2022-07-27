@@ -209,32 +209,56 @@ class Model:
                     self.Model.add_constraint(self.Model.vars[t1,r,t2,0] ==  self.Model.vars[t1_2,r,t2_2,1])
                     self.Model.add_constraint(self.Model.vars[t1,r,t2,1] ==  self.Model.vars[t1_2,r,t2_2,0])
 
+    def enumerate_round_pairs(self, checked:list, pairs:list, round_pairs_candidates:list):
+        if(checked == [True]*self.n):
+            round_pairs_candidates.append(pairs[:])
+            return
+        
+        t1 = -1
+        for t in range(self.n):
+            if( not checked[t] ):
+                t1 = t
+                break
+
+        checked[t1] = True
+        
+        for t2 in range(t1 + 1, self.n):
+            if( not checked[t2]):
+                checked[t2] = True
+                pairs.append((t1+1,t2+1))
+                self.enumerate_round_pairs(checked, pairs, round_pairs_candidates)
+                pairs.pop()
+                checked[t2] = False
+        
+        checked[t1] = False
+
+
+        return 
+
     # ラウンド補ラウンド制約
     def add_constraints10(self):
-        for r in self.rounds:
-            for t1 in self.teams:
-                for t2 in self.teams:
-                    for t1_ in self.teams:
-                        for t2_ in self.teams:
-                            if(len(set((t1,t2,t1_,t2_))) != 4):
-                                continue
-                            print((t1,t2), (t1_,t2_))
-                            self.Model.add_constraint(
-                                self.Model.vars[t1, r, t2, 0] + self.Model.vars[t1, r, t2, 1]
-                                + self.Model.vars[t1_, r, t2_, 0] + self.Model.vars[t1_, r, t2_, 1]
-                                - 1 <= self.Model.vars[-t1, -t2, -t1_, -t2_]
-                            )
+        round_pairs_candidates = []
+        self.enumerate_round_pairs([False]*self.n, [], round_pairs_candidates)
+        for pairs in round_pairs_candidates:
+            
+            expr = self.Model.linear_expr()
 
-                            self.Model.add_constraint(
-                                self.Model.vars[t1, r, t2, 0] + self.Model.vars[t1, r, t2, 1]
-                                >= self.Model.vars[-t1, -t2, -t1_, -t2_]
-                            )
+            for r in self.rounds:
+                # x_{r, pairs} = 1 <=> ラウンドrでpairsの対戦を. 
+                # => x_{r, pairs} = 0 or ラウンドrでpairsの対戦を.
+                for t1,t2 in pairs:
+                    self.Model.add_constraint(self.Model.vars[t1,r,t2,0] + self.Model.vars[t1,r,t2,1] >= self.Model.vars[r, "$".join(pairs)])
 
-                            self.Model.add_constraint(
-                                self.Model.vars[t1_, r, t2_, 0] + self.Model.vars[t1_, r, t2_, 1]
-                                >= self.Model.vars[-t1, -t2, -t1_, -t2_]
-                            )
-                    
+                expr.add(self.Model.vars[r, "$".join(pairs)])
+            
+            # \sum_{r} x_{r, pairs} \in {0,2}
+            # https://kelicht.hatenablog.com/entry/2020/09/26/190000
+            expr.add(-1)
+            self.Model.add_constraint(expr = 0)
+            
+
+
+
 
 
     def print_solution_value(self, i, r, j, ha):
