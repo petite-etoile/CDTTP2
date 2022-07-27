@@ -9,7 +9,7 @@ from datetime import datetime
 
 sys.path.append(os.pardir)
 from sub import generate_solution_pool, output_all_schedules
-from Model import CDTTP2_pair_Model 
+from Model import CDTTP2_round_Model 
 
 
 def main():
@@ -17,10 +17,10 @@ def main():
     n = int(sys.argv[1])
 
     year, month, date, hour, minute, second, *_ = re.split("[ .:-]", str(datetime.now()))
-    output_file = "pair_result_all/n{:0>2}.text".format(n)
+    output_file = "round_result_all/n{:0>2}.text".format(n)
     f = open(output_file, "w")
 
-    mdl = CDTTP2_pair_Model.Model(n, f)
+    mdl = CDTTP2_round_Model.Model(n, f)
     start = time()
     
     sol_pool = generate_solution_pool.generate(mdl.Model)
