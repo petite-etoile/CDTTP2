@@ -30,7 +30,7 @@ class Model:
         self.add_constraints6()
         self.add_constraints7()
         self.add_constraints8()
-        # self.add_constraints9()
+        self.add_constraints9()
         self.add_constraints10()
         # self.Model.add_constraint(self.Model.vars[1,1,2,1] == 1) 
 
@@ -231,6 +231,7 @@ class Model:
                 checked[t2] = False
         
         checked[t1] = False
+
 
         return 
 

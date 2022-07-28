@@ -25,9 +25,9 @@ def main():
     try:
         Model = CDTTP2_round_Model.Model(n, f)
         
-        CR = conflict_refiner.ConflictRefiner()
-        conflict_result = CR.refine_conflict(Model.Model)
-        conflict_result.display()
+        # CR = conflict_refiner.ConflictRefiner()
+        # conflict_result = CR.refine_conflict(Model.Model)
+        # conflict_result.display()
 
 
         start = time()

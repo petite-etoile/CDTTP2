@@ -11,9 +11,10 @@ def get_schedule(mdl, sol, team_num):
     schedule = [["__" for _ in range(2*(team_num-1))] for _ in range(team_num)]
     # print(sol.get_values([i for i in range(nb_vars)]))
     for var in mdl.iter_binary_vars():
-        if "-" in str(var):
-            continue
         if sol.get_value(var) < 0.5:
+            continue
+        # print(str(var), sol.get_value(var))
+        if "-" in str(var) or "vs" in str(var):
             continue
 
         i,r,j,ha = parse(str(var))

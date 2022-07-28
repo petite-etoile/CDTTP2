@@ -1,7 +1,16 @@
 from docplex.mp import model 
 import os
+import re
+import sys
 
-# ペア制約のみ追加したCDTTP2モデル
+# import tkinter as tk
+# from tkinter import ttk
+from time import time
+
+from datetime import datetime
+from cplex.exceptions import CplexError, CplexSolverError
+
+
 class Model:
     def __init__(self, n:int, f):
         self.n = n
@@ -30,8 +39,6 @@ class Model:
         self.add_constraints6()
         self.add_constraints7()
         self.add_constraints8()
-        # self.add_constraints9()
-        self.add_constraints10()
         # self.Model.add_constraint(self.Model.vars[1,1,2,1] == 1) 
 
 
@@ -50,7 +57,11 @@ class Model:
         return expr
         
     def solve(self):
-        self.Model.solve()
+        try:
+            self.Model.solve()
+        except CplexSolverError: 
+            print("A")
+            
 
         self.represent_schdule()
 
@@ -69,16 +80,6 @@ class Model:
             for r in self.rounds[:-1]:
                 for ha in range(2): # home/away. iff ha is 0, i's home game.
                     keys.append((-i,-r,-ha))
-
-        # z_{r1,r2,pairs}
-        round_pairs_candidates = []
-        self.enumerate_round_pairs([False]*self.n, [], round_pairs_candidates)
-        for pairs in round_pairs_candidates:
-            pairs_key = self.get_pairs_key(pairs)
-            for r1 in self.rounds:
-                for r2 in self.rounds[r1:]:
-                    keys.append((r1,r2,pairs_key))
-
         return keys
 
     #i (\in X) が 1スロットに何戦やるかを表す式
@@ -197,73 +198,6 @@ class Model:
                 j=i+1
                 self.Model.add_constraint(self.Model.vars[i,1,j,1] == 1) 
                 
-    # 制約B
-    def add_constraints9(self):
-        for r in self.rounds:
-            for t1 in self.teams[::2]:
-                for t2 in self.teams:
-                    if(t1+1==t2 or t1==t2):
-                        continue
-                    t1_2 = t1+1
-                    t2_2 = t2+1 if t2&1 else t2-1
-                    self.Model.add_constraint(self.Model.vars[t1,r,t2,0] ==  self.Model.vars[t1_2,r,t2_2,1])
-                    self.Model.add_constraint(self.Model.vars[t1,r,t2,1] ==  self.Model.vars[t1_2,r,t2_2,0])
-
-    def enumerate_round_pairs(self, checked:list, pairs:list, round_pairs_candidates:list):
-        if(checked == [True]*self.n):
-            round_pairs_candidates.append(pairs[:])
-            return
-        
-        t1 = -1
-        for t in range(self.n):
-            if( not checked[t] ):
-                t1 = t
-                break
-
-        checked[t1] = True
-        
-        for t2 in range(t1 + 1, self.n):
-            if( not checked[t2]):
-                checked[t2] = True
-                pairs.append((t1+1,t2+1))
-                self.enumerate_round_pairs(checked, pairs, round_pairs_candidates)
-                pairs.pop()
-                checked[t2] = False
-        
-        checked[t1] = False
-
-        return 
-
-    def get_pairs_key(self, pairs):
-        res = ""
-        for t1,t2 in pairs:
-            res += "{}vs{}".format(t1,t2)
-            res += "$"
-        return res
-
-
-    # ラウンド補ラウンド制約
-    def add_constraints10(self):
-        round_pairs_candidates = []
-        self.enumerate_round_pairs([False]*self.n, [], round_pairs_candidates)
-        expr = self.Model.linear_expr()
-        for pairs in round_pairs_candidates:
-            pairs_key = self.get_pairs_key(pairs)
-            
-
-            for r1 in self.rounds:
-                for r2 in self.rounds[r1:]:
-                    # x_{r1, r2, pairs} = 1 <=> ラウンドr1,r2でpairsの対戦を. 
-                    # x_{r1, r2, pairs} = 1 => ラウンドr1でpairsの対戦を.
-                    # x_{r1, r2, pairs} = 1 => ラウンドr2でpairsの対戦を.
-                    for t1,t2 in pairs:
-                        self.Model.add_constraint(self.Model.vars[t1,r1,t2,0] + self.Model.vars[t1,r1,t2,1] >= self.Model.vars[r1, r2, pairs_key])
-                        self.Model.add_constraint(self.Model.vars[t1,r2,t2,0] + self.Model.vars[t1,r2,t2,1] >= self.Model.vars[r1, r2, pairs_key])
-
-                    expr.add(self.Model.vars[r1, r2, pairs_key])
-            
-            self.Model.add_constraint(expr == self.n-1)
-
 
     def print_solution_value(self, i, r, j, ha):
         print("x({:0>2},{:0>2},{:0>2},{:0>2}) : {}".format(i,r,j,ha,self.Model.vars[i,r,j,ha].solution_value))
@@ -315,8 +249,51 @@ class Model:
                         if(value):
                             self.schedule[i-1][r-1] = "{}{}".format("@" if ha else " ", j)
 
-    def output_schdule(self,sec):
-        for row in self.schedule:
-            for a in row:
-                self.f.write("{:>4}".format(a))
-            self.f.write("\n")
+    # def display_schedule(self):
+    #     root = tk.Tk()
+    #     root.title("CDTTP(2) n={} break数:{}".format(self.n, self.Model.objective_value))
+
+    #     root.geometry("2400x900+100+100")
+    #     table = TreeView( root )
+
+    #     columns = [i for i in range(1, (2 * (self.n - 1)) + 1)]
+
+    #     table.create_widgets(columns, self.schedule)
+    #     root.mainloop()
+
+
+def main():
+    
+    n = int(sys.argv[1])
+
+    year, month, date, hour, minute, second, *_ = re.split("[ .:-]", str(datetime.now()))
+    output_file = "result/n{:0>2}_{:0>4}年{:0>2}月{:0>2}日{:0>2}時{:0>2}分{:0>2}秒.text".format(n, year, month, date, hour, minute, second)
+    f = open(output_file, "a")
+
+    SM = SchedulingModel(n, f)
+    try:
+        start = time()
+        SM.solve()
+    except Exception as e:
+        f.write("error!"+str(e))
+        
+
+    end = time()
+    SM.print_solution_values()
+    SM.print_objective_value()
+
+    print(end - start,"秒")
+    f.write("{}秒\n".format(end - start))
+
+    # SM.display_schedule()
+
+
+    f.close()
+
+
+
+if __name__ == "__main__":
+    main()
+
+
+
