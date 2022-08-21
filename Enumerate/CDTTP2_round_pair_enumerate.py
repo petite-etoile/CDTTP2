@@ -17,7 +17,7 @@ def main():
     n = int(sys.argv[1])
 
     year, month, date, hour, minute, second, *_ = re.split("[ .:-]", str(datetime.now()))
-    output_file = "pair_result_all/n{:0>2}.text".format(n)
+    output_file = "round_pair_result_all/n{:0>2}.text".format(n)
     f = open(output_file, "w")
 
     mdl = CDTTP2_round_pair_Model.Model(n, f)

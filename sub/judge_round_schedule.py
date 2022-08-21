@@ -43,6 +43,8 @@ def input_all_schedules():
 
 
     for i in range(schedule_num):
+        for t in range(team_num):
+            idx = 2 + 
         for idx in range(2 + i * (team_num+1), 2 + i * team_num + round_num):
             print(lines[idx])
             schedules[i][(idx-2)%team_num] = lines[idx].split()
